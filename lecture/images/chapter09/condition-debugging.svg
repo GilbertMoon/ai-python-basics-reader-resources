@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">조건문 오류 점검 순서</title><desc id="desc">콜론, 들여쓰기, 대입과 비교, 조건 순서 오류를 점검하는 Chapter 09 디버깅 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:27px;font-weight:800}.b{font-size:22px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.n{font-size:22px;font-weight:800;fill:#fff}.small{font-size:19px;font-weight:600}</style>
+<text x="70" y="90" class="t">조건문 오류는 네 가지부터 확인합니다</text>
+<text x="70" y="135" class="s">문법 오류와 논리 오류를 분리해서 점검하면 더 빨리 해결할 수 있습니다</text>
+<g>
+<rect x="70" y="190" width="305" height="260" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="230" r="25" fill="#d85c5c"/><text x="115" y="238" text-anchor="middle" class="n">1</text>
+<text x="155" y="238" class="h">콜론 누락</text>
+<text x="100" y="300" class="code">if score &gt;= 60</text>
+<text x="100" y="340" class="code">    print("통과")</text>
+<text x="100" y="395" class="b">if / elif / else 끝의</text><text x="100" y="425" class="b">콜론(:)을 확인</text>
+<rect x="400" y="190" width="305" height="260" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="445" cy="230" r="25" fill="#d8a432"/><text x="445" y="238" text-anchor="middle" class="n">2</text>
+<text x="485" y="238" class="h">들여쓰기</text>
+<text x="430" y="300" class="code">if age &gt;= 18:</text>
+<text x="430" y="340" class="code">print("성인")</text>
+<text x="430" y="395" class="b">조건에 속하는 코드는</text><text x="430" y="425" class="b">같은 깊이로 들여쓰기</text>
+<rect x="730" y="190" width="305" height="260" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="775" cy="230" r="25" fill="#2f6ecb"/><text x="775" y="238" text-anchor="middle" class="n">3</text>
+<text x="815" y="238" class="h">= 와 ==</text>
+<text x="760" y="300" class="code">score = 60</text><text x="760" y="335" class="small">값 저장</text>
+<text x="760" y="385" class="code">score == 60</text><text x="760" y="420" class="small">같은지 비교</text>
+<rect x="1060" y="190" width="305" height="260" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1105" cy="230" r="25" fill="#2fa66d"/><text x="1105" y="238" text-anchor="middle" class="n">4</text>
+<text x="1145" y="238" class="h">조건 순서</text>
+<text x="1090" y="300" class="code">if score &gt;= 60:</text>
+<text x="1090" y="338" class="code">elif score &gt;= 90:</text>
+<text x="1090" y="390" class="b">넓은 조건이 먼저면</text><text x="1090" y="420" class="b">뒤 조건이 실행되지 않음</text>
+</g>
+<rect x="70" y="510" width="1295" height="205" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="560" class="h">DEBUG CHECKLIST</text>
+<circle cx="125" cy="610" r="20" fill="#2f6ecb"/><text x="125" y="617" text-anchor="middle" class="n">1</text><text x="165" y="617" class="b">오류 메시지와 줄 번호를 먼저 읽는다.</text>
+<circle cx="520" cy="610" r="20" fill="#2f6ecb"/><text x="520" y="617" text-anchor="middle" class="n">2</text><text x="560" y="617" class="b">조건식 자체가 True/False 중 무엇인지 확인한다.</text>
+<circle cx="125" cy="670" r="20" fill="#2f6ecb"/><text x="125" y="677" text-anchor="middle" class="n">3</text><text x="165" y="677" class="b">입력값의 데이터형과 경계값을 바꿔 본다.</text>
+<circle cx="760" cy="670" r="20" fill="#2f6ecb"/><text x="760" y="677" text-anchor="middle" class="n">4</text><text x="800" y="677" class="b">한 번에 한 곳만 수정하고 다시 실행한다.</text>
+<rect x="70" y="745" width="1295" height="45" rx="15" fill="#eef5ff"/>
+<text x="720" y="776" text-anchor="middle" class="b">오류가 없는데 결과가 이상하면 “문법”보다 “조건의 순서와 범위”를 의심하세요.</text>
+</svg>
