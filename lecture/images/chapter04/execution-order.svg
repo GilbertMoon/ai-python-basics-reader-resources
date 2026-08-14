@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">파이썬 코드 실행 순서</title><desc id="desc">파이썬 코드가 기본적으로 위에서 아래로 실행되는 흐름을 설명하는 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:28px;font-weight:700;fill:#52617e}.h{font-size:30px;font-weight:800}.b{font-size:24px;font-weight:600}.code{font-family:Consolas,monospace;font-size:32px;font-weight:700}.n{font-size:28px;font-weight:800;fill:#fff}</style>
+<text x="720" y="82" text-anchor="middle" class="t">코드는 기본적으로 위에서 아래로 실행됩니다</text><text x="720" y="130" text-anchor="middle" class="s">순서를 바꾸면 실행 결과의 순서도 함께 바뀝니다</text>
+<rect x="145" y="195" width="720" height="135" rx="26" fill="#f3f7ff" stroke="#2563dc" stroke-width="3"/><circle cx="205" cy="262" r="34" fill="#2563dc"/><text x="205" y="272" text-anchor="middle" class="n">1</text><text x="270" y="273" class="code">print("첫 번째")</text>
+<path d="M505 333v42" stroke="#2563dc" stroke-width="6"/><path d="M490 365l15 18 15-18" fill="none" stroke="#2563dc" stroke-width="6"/>
+<rect x="145" y="385" width="720" height="135" rx="26" fill="#eefbf9" stroke="#149c98" stroke-width="3"/><circle cx="205" cy="452" r="34" fill="#149c98"/><text x="205" y="462" text-anchor="middle" class="n">2</text><text x="270" y="463" class="code">print("두 번째")</text>
+<path d="M505 523v42" stroke="#149c98" stroke-width="6"/><path d="M490 555l15 18 15-18" fill="none" stroke="#149c98" stroke-width="6"/>
+<rect x="145" y="575" width="720" height="135" rx="26" fill="#f3f7ff" stroke="#2563dc" stroke-width="3"/><circle cx="205" cy="642" r="34" fill="#2563dc"/><text x="205" y="652" text-anchor="middle" class="n">3</text><text x="270" y="653" class="code">print("세 번째")</text>
+<rect x="930" y="240" width="365" height="390" rx="30" fill="#0e1730"/><text x="1112" y="300" text-anchor="middle" class="h" fill="#fff">실행 결과</text><text x="1000" y="390" class="code" fill="#fff">첫 번째</text><text x="1000" y="465" class="code" fill="#fff">두 번째</text><text x="1000" y="540" class="code" fill="#fff">세 번째</text>
+<rect x="195" y="735" width="1050" height="54" rx="18" fill="#eef4ff"/><text x="720" y="771" text-anchor="middle" class="b">PREDICT: 코드를 재배치한 뒤 실행하기 전에 출력 순서를 먼저 예상해 보세요.</text>
+</svg>
