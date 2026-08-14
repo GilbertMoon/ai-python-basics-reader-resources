@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">사용자 입력 오류 디버깅</title><desc id="desc">TypeError와 ValueError를 구분하고 입력값과 데이터형을 점검하는 Chapter 08 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:22px;font-weight:600}.code{font-family:Consolas,monospace;font-size:25px;font-weight:700}.n{font-size:23px;font-weight:800;fill:#fff}</style>
+<text x="80" y="95" class="t">입력 오류는 값과 데이터형부터 확인</text><text x="80" y="140" class="s">오류 메시지를 지우지 말고 어떤 입력을 어떻게 사용했는지 연결합니다.</text>
+<rect x="75" y="220" width="400" height="310" rx="28" fill="#fff0f1" stroke="#dd6b74" stroke-width="3"/><text x="115" y="280" class="h">TypeError</text><text x="115" y="340" class="code">age = input("나이: ")</text><text x="115" y="390" class="code">print(age + 1)</text><text x="115" y="460" class="b">원인: str + int 계산 시도</text>
+<rect x="520" y="220" width="400" height="310" rx="28" fill="#fff7e8" stroke="#e3aa43" stroke-width="3"/><text x="560" y="280" class="h">ValueError</text><text x="560" y="340" class="code">int("스무살")</text><text x="560" y="410" class="b">원인: 정수로 바꿀 수 없는</text><text x="560" y="450" class="b">문자열을 int()에 전달</text>
+<rect x="965" y="220" width="400" height="310" rx="28" fill="#eefcf7" stroke="#58b89c" stroke-width="3"/><text x="1005" y="280" class="h">점검 순서</text><circle cx="1025" cy="345" r="23" fill="#13906e"/><text x="1018" y="353" class="n">1</text><text x="1070" y="353" class="b">실제 입력값 확인</text><circle cx="1025" cy="410" r="23" fill="#13906e"/><text x="1018" y="418" class="n">2</text><text x="1070" y="418" class="b">type()으로 확인</text><circle cx="1025" cy="475" r="23" fill="#13906e"/><text x="1018" y="483" class="n">3</text><text x="1070" y="483" class="b">변환 위치 확인</text>
+<rect x="200" y="625" width="1040" height="105" rx="22" fill="#f3f7ff"/><text x="270" y="680" class="h">오류 이름 암기보다 “무슨 값을 어떤 형으로 쓰려 했는가?”를 먼저 봅니다.</text>
+</svg>
