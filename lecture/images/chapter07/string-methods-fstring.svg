@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">문자열 메서드와 f-string</title><desc id="desc">문자열 메서드와 f-string 활용을 설명하는 Chapter 07 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:27px;font-weight:700}.n{font-size:24px;font-weight:800;fill:#fff}</style>
+<text x="72" y="90" class="t">문자열 메서드와 f-string</text><text x="72" y="132" class="s">문자열을 정리하고, 바꾸고, 문장 안에 변수 값을 넣습니다.</text>
+<rect x="72" y="190" width="620" height="470" rx="28" fill="#eef5ff" stroke="#9fc4ff" stroke-width="3"/><circle cx="118" cy="235" r="24" fill="#2368d8"/><text x="110" y="243" class="n">1</text><text x="158" y="246" class="h">자주 쓰는 문자열 메서드</text>
+<rect x="105" y="285" width="255" height="90" rx="18" fill="#fff"/><text x="130" y="322" class="code">upper()</text><text x="130" y="354" class="b">영문자를 대문자로</text>
+<rect x="390" y="285" width="255" height="90" rx="18" fill="#fff"/><text x="415" y="322" class="code">lower()</text><text x="415" y="354" class="b">영문자를 소문자로</text>
+<rect x="105" y="405" width="255" height="90" rx="18" fill="#fff"/><text x="130" y="442" class="code">strip()</text><text x="130" y="474" class="b">양쪽 끝 공백 제거</text>
+<rect x="390" y="405" width="255" height="90" rx="18" fill="#fff"/><text x="415" y="442" class="code">replace()</text><text x="415" y="474" class="b">문자열 일부 교체</text>
+<text x="105" y="548" class="code">"  Python  ".strip()</text><text x="105" y="590" class="b">→ "Python"</text><text x="105" y="630" class="b">처리 결과는 새 문자열이므로 필요하면 변수에 저장합니다.</text>
+<rect x="724" y="190" width="644" height="470" rx="28" fill="#eefbf7" stroke="#8edac2" stroke-width="3"/><circle cx="770" cy="235" r="24" fill="#139c79"/><text x="762" y="243" class="n">2</text><text x="810" y="246" class="h">f-string으로 문장 만들기</text>
+<text x="760" y="315" class="code">name = "문길동"</text><text x="760" y="360" class="code">age = 20</text><rect x="760" y="397" width="572" height="94" rx="18" fill="#fff"/><text x="790" y="438" class="code">f"이름: {name}, 나이: {age}"</text><text x="790" y="474" class="b">→ 이름: 문길동, 나이: 20</text>
+<text x="760" y="545" class="b">문자열 앞에 f를 붙이고</text><text x="760" y="582" class="b">중괄호 { } 안에 변수나 간단한 계산을 넣습니다.</text><text x="760" y="628" class="code">f"총액: {price * quantity}원"</text>
+<rect x="72" y="698" width="1296" height="72" rx="20" fill="#132b63"/><text x="108" y="744" style="font-family:Pretendard,'Noto Sans KR',sans-serif;font-size:28px;font-weight:800;fill:white">추천 흐름: 원본 문자열 확인 → 메서드 적용 → 결과를 새 변수에 저장 → f-string으로 보기 좋게 출력</text>
+</svg>
