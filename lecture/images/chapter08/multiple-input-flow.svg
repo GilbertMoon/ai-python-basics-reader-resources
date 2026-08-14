@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">여러 값을 순서대로 입력받기</title><desc id="desc">이름, 나이, 도시를 순서대로 입력받고 변수에 저장하는 Chapter 08 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:27px;font-weight:700}.n{font-size:24px;font-weight:800;fill:#fff}</style>
+<text x="80" y="95" class="t">여러 입력은 한 단계씩 받습니다</text><text x="80" y="140" class="s">입력 순서와 데이터형을 함께 설계하면 프로그램이 읽기 쉬워집니다.</text>
+<circle cx="145" cy="270" r="34" fill="#2563c7"/><text x="136" y="280" class="n">1</text><rect x="200" y="215" width="1030" height="110" rx="24" fill="#eef5ff"/><text x="245" y="260" class="h">이름 입력</text><text x="500" y="260" class="code">name = input("이름: ").strip()</text><text x="500" y="300" class="b">문자열 그대로 사용</text>
+<circle cx="145" cy="410" r="34" fill="#13906e"/><text x="136" y="420" class="n">2</text><rect x="200" y="355" width="1030" height="110" rx="24" fill="#eefcf7"/><text x="245" y="400" class="h">나이 입력</text><text x="500" y="400" class="code">age = int(input("나이: "))</text><text x="500" y="440" class="b">숫자 계산·비교를 위해 int 변환</text>
+<circle cx="145" cy="550" r="34" fill="#d28b10"/><text x="136" y="560" class="n">3</text><rect x="200" y="495" width="1030" height="110" rx="24" fill="#fff7e8"/><text x="245" y="540" class="h">도시 입력</text><text x="500" y="540" class="code">city = input("도시: ").strip()</text><text x="500" y="580" class="b">앞뒤 공백 정리 후 저장</text>
+<rect x="250" y="655" width="940" height="90" rx="22" fill="#f3f7ff"/><text x="315" y="710" class="h">입력 순서 → 변수 저장 → 형 변환 → f-string 출력</text>
+</svg>
