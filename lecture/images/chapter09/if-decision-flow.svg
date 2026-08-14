@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">조건문 True False 실행 흐름</title><desc id="desc">조건식의 결과가 True이면 코드 블록을 실행하고 False이면 건너뛰는 if 문의 흐름을 설명하는 Chapter 09 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:30px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:28px;font-weight:700}.n{font-size:24px;font-weight:800;fill:#fff}.small{font-size:21px;font-weight:600}</style>
+<text x="70" y="90" class="t">조건문은 프로그램의 흐름을 바꿉니다</text>
+<text x="70" y="135" class="s">핵심 질문: 이 조건식의 결과가 True인가?</text>
+<rect x="80" y="210" width="330" height="115" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="245" y="250" text-anchor="middle" class="h">조건식</text>
+<text x="245" y="295" text-anchor="middle" class="code">score &gt;= 60</text>
+<line x1="410" y1="268" x2="560" y2="268" stroke="#4775d1" stroke-width="5"/>
+<polygon points="560,268 540,255 540,281" fill="#4775d1"/>
+<polygon points="720,180 880,268 720,356 560,268" fill="#f6f9ff" stroke="#4775d1" stroke-width="4"/>
+<text x="720" y="258" text-anchor="middle" class="h">True?</text>
+<text x="720" y="293" text-anchor="middle" class="b">조건 결과 확인</text>
+<line x1="880" y1="230" x2="1040" y2="230" stroke="#2fa66d" stroke-width="5"/>
+<polygon points="1040,230 1020,217 1020,243" fill="#2fa66d"/>
+<text x="950" y="205" text-anchor="middle" class="b" fill="#188554">True</text>
+<rect x="1040" y="175" width="310" height="110" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="1195" y="220" text-anchor="middle" class="h">코드 실행</text>
+<text x="1195" y="260" text-anchor="middle" class="code">print("통과")</text>
+<line x1="720" y1="356" x2="720" y2="465" stroke="#e27676" stroke-width="5"/>
+<polygon points="720,465 707,445 733,445" fill="#e27676"/>
+<text x="755" y="415" class="b" fill="#be4747">False</text>
+<rect x="565" y="465" width="310" height="105" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<text x="720" y="510" text-anchor="middle" class="h">해당 블록 건너뜀</text>
+<text x="720" y="548" text-anchor="middle" class="b">다음 코드로 이동</text>
+<rect x="80" y="635" width="1280" height="115" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<circle cx="135" cy="692" r="28" fill="#2f6ecb"/><text x="135" y="701" text-anchor="middle" class="n">1</text>
+<text x="180" y="685" class="b">조건식은 True 또는 False를 만든다.</text>
+<circle cx="640" cy="692" r="28" fill="#2f6ecb"/><text x="640" y="701" text-anchor="middle" class="n">2</text>
+<text x="685" y="685" class="b">if 끝에는 콜론(:)을 쓴다.</text>
+<circle cx="1040" cy="692" r="28" fill="#2f6ecb"/><text x="1040" y="701" text-anchor="middle" class="n">3</text>
+<text x="1085" y="685" class="b">실행 코드는 들여쓴다.</text>
+<text x="180" y="720" class="small">조건 결과를 먼저 예상한 뒤 실행해 보세요.</text>
+</svg>
