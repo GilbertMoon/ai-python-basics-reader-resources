@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">문자열 인덱싱과 슬라이싱</title><desc id="desc">Python 문자열의 양수 및 음수 인덱스와 슬라이싱 범위를 설명하는 Chapter 07 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:30px;font-weight:800}.b{font-size:24px;font-weight:600}.code{font-family:Consolas,monospace;font-size:31px;font-weight:700}.idx{font-size:24px;font-weight:800}.char{font-size:42px;font-weight:800}.n{font-size:24px;font-weight:800;fill:#fff}</style>
+<text x="72" y="90" class="t">인덱싱과 슬라이싱</text><text x="72" y="132" class="s">한 문자 꺼내기와 여러 문자 잘라내기를 구분합니다.</text>
+<text x="72" y="207" class="h">word = "Python"</text>
+<g transform="translate(112,260)">
+<text x="0" y="-20" class="idx">인덱스</text>
+<g><text x="105" y="0" class="idx">0</text><text x="255" y="0" class="idx">1</text><text x="405" y="0" class="idx">2</text><text x="555" y="0" class="idx">3</text><text x="705" y="0" class="idx">4</text><text x="855" y="0" class="idx">5</text></g>
+<g fill="#eef5ff" stroke="#8cb9ff" stroke-width="3"><rect x="55" y="25" width="110" height="110" rx="18"/><rect x="205" y="25" width="110" height="110" rx="18"/><rect x="355" y="25" width="110" height="110" rx="18"/><rect x="505" y="25" width="110" height="110" rx="18"/><rect x="655" y="25" width="110" height="110" rx="18"/><rect x="805" y="25" width="110" height="110" rx="18"/></g>
+<text x="91" y="95" class="char">P</text><text x="240" y="95" class="char">y</text><text x="390" y="95" class="char">t</text><text x="540" y="95" class="char">h</text><text x="690" y="95" class="char">o</text><text x="840" y="95" class="char">n</text>
+<g><text x="95" y="175" class="idx">-6</text><text x="245" y="175" class="idx">-5</text><text x="395" y="175" class="idx">-4</text><text x="545" y="175" class="idx">-3</text><text x="695" y="175" class="idx">-2</text><text x="845" y="175" class="idx">-1</text></g>
+<text x="0" y="175" class="idx">음수</text>
+</g>
+<rect x="72" y="500" width="390" height="190" rx="26" fill="#eefbf7" stroke="#8edac2" stroke-width="3"/><circle cx="118" cy="545" r="24" fill="#139c79"/><text x="110" y="553" class="n">1</text><text x="158" y="556" class="h">인덱싱</text><text x="105" y="614" class="code">word[0] → "P"</text><text x="105" y="658" class="code">word[-1] → "n"</text>
+<rect x="492" y="500" width="430" height="190" rx="26" fill="#fff7eb" stroke="#f1c66f" stroke-width="3"/><circle cx="538" cy="545" r="24" fill="#e39a1a"/><text x="530" y="553" class="n">2</text><text x="578" y="556" class="h">슬라이싱</text><text x="525" y="614" class="code">word[0:2] → "Py"</text><text x="525" y="658" class="code">word[2:6] → "thon"</text>
+<rect x="952" y="500" width="416" height="190" rx="26" fill="#f4f0ff" stroke="#bba5f1" stroke-width="3"/><circle cx="998" cy="545" r="24" fill="#7656d4"/><text x="990" y="553" class="n">3</text><text x="1038" y="556" class="h">핵심 규칙</text><text x="985" y="614" class="b">시작 위치는 포함</text><text x="985" y="654" class="b">끝 위치는 포함하지 않음</text>
+<rect x="72" y="718" width="1296" height="58" rx="18" fill="#132b63"/><text x="105" y="756" style="font-family:Pretendard,'Noto Sans KR',sans-serif;font-size:27px;font-weight:800;fill:white">첫 문자 [0] · 마지막 문자 [-1] · 범위를 벗어난 인덱스는 IndexError</text>
+</svg>
