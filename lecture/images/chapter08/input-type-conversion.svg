@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">input과 데이터형 변환</title><desc id="desc">input 함수가 문자열을 반환하고 int와 float로 변환하는 과정을 설명하는 Chapter 08 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:30px;font-weight:800}.b{font-size:24px;font-weight:600}.code{font-family:Consolas,monospace;font-size:29px;font-weight:700}</style>
+<text x="80" y="95" class="t">input()의 결과는 항상 문자열</text><text x="80" y="140" class="s">계산이 필요하면 목적에 맞는 숫자형으로 변환합니다.</text>
+<rect x="90" y="235" width="360" height="330" rx="30" fill="#eef5ff" stroke="#7ca7ef" stroke-width="3"/><text x="130" y="300" class="h">1. 사용자가 입력</text><text x="130" y="375" class="code">age = input("나이: ")</text><text x="130" y="450" class="b">사용자가 20 입력</text><text x="130" y="515" class="code">age == "20"</text>
+<text x="475" y="410" font-size="58" font-weight="800" fill="#2563c7">→</text>
+<rect x="555" y="235" width="360" height="330" rx="30" fill="#fff7e8" stroke="#e3aa43" stroke-width="3"/><text x="595" y="300" class="h">2. 데이터형 확인</text><text x="595" y="375" class="code">type(age)</text><text x="595" y="450" class="b">결과: str</text><text x="595" y="515" class="b">화면의 20과 데이터형은 별개</text>
+<text x="940" y="410" font-size="58" font-weight="800" fill="#2563c7">→</text>
+<rect x="1020" y="235" width="330" height="330" rx="30" fill="#eefcf7" stroke="#58b89c" stroke-width="3"/><text x="1060" y="300" class="h">3. 필요하면 변환</text><text x="1060" y="375" class="code">int("20") → 20</text><text x="1060" y="435" class="code">float("3.5") → 3.5</text><text x="1060" y="510" class="b">이제 계산 가능</text>
+<rect x="170" y="635" width="1100" height="92" rx="22" fill="#f3f7ff"/><text x="250" y="692" class="h">이름·도시는 str 그대로, 나이·수량은 int, 키·온도는 float가 자연스럽습니다.</text>
+</svg>
