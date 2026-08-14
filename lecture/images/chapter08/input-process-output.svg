@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">입력 처리 출력 흐름</title><desc id="desc">사용자 입력이 변수에 저장되고 처리된 뒤 결과로 출력되는 흐름을 설명하는 Chapter 08 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:58px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:31px;font-weight:800}.b{font-size:24px;font-weight:600}.code{font-family:Consolas,monospace;font-size:28px;font-weight:700}.n{font-size:26px;font-weight:800;fill:#fff}</style>
+<text x="80" y="95" class="t">입력 → 처리 → 출력</text><text x="80" y="140" class="s">input()이 프로그램을 사용자와 대화하게 만듭니다.</text>
+<rect x="90" y="245" width="330" height="310" rx="30" fill="#eef5ff" stroke="#7ca7ef" stroke-width="3"/><circle cx="150" cy="310" r="34" fill="#2563c7"/><text x="140" y="320" class="n">1</text><text x="200" y="320" class="h">입력</text><text x="125" y="390" class="b">키보드로 값을 입력</text><text x="125" y="455" class="code">input(...)</text><text x="125" y="510" class="b">예: 이름, 가격, 수량</text>
+<text x="455" y="410" font-size="60" font-weight="800" fill="#2563c7">→</text>
+<rect x="555" y="245" width="330" height="310" rx="30" fill="#eefcf7" stroke="#58b89c" stroke-width="3"/><circle cx="615" cy="310" r="34" fill="#13906e"/><text x="605" y="320" class="n">2</text><text x="665" y="320" class="h">처리</text><text x="590" y="390" class="b">변수에 저장하고 변환</text><text x="590" y="455" class="code">int() · float()</text><text x="590" y="510" class="b">계산 · 문자열 정리</text>
+<text x="920" y="410" font-size="60" font-weight="800" fill="#2563c7">→</text>
+<rect x="1020" y="245" width="330" height="310" rx="30" fill="#fff7e8" stroke="#e3aa43" stroke-width="3"/><circle cx="1080" cy="310" r="34" fill="#d28b10"/><text x="1070" y="320" class="n">3</text><text x="1130" y="320" class="h">출력</text><text x="1055" y="390" class="b">처리한 결과를 보여 줌</text><text x="1055" y="455" class="code">print(f"...")</text><text x="1055" y="510" class="b">사용자에게 결과 확인</text>
+<rect x="230" y="635" width="980" height="90" rx="22" fill="#f3f7ff"/><text x="305" y="692" class="h">같은 코드라도 사용자의 입력에 따라 결과가 달라집니다.</text>
+</svg>
