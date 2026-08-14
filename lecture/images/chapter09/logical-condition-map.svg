@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">비교 연산자와 논리 연산자로 조건 만들기</title><desc id="desc">비교 연산으로 True False를 만들고 and or not으로 여러 조건을 조합하는 Chapter 09 인포그래픽</desc>
+<rect width="1440" height="810" fill="#fff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:26px;font-weight:700}.small{font-size:20px;font-weight:600}</style>
+<text x="70" y="90" class="t">조건식은 비교하고, 논리 연산자로 조합합니다</text>
+<text x="70" y="135" class="s">비교 결과는 True/False, 여러 결과는 and · or · not으로 연결</text>
+<rect x="70" y="190" width="600" height="470" rx="28" fill="#f8fbff" stroke="#c8d9f3" stroke-width="3"/>
+<text x="110" y="240" class="h">1. 비교 연산자</text>
+<text x="110" y="295" class="code">score &gt;= 60</text><text x="430" y="295" class="b">60 이상인가?</text>
+<text x="110" y="350" class="code">age &lt; 18</text><text x="430" y="350" class="b">18보다 작은가?</text>
+<text x="110" y="405" class="code">name == "민수"</text><text x="430" y="405" class="b">문자열이 같은가?</text>
+<text x="110" y="460" class="code">price != 0</text><text x="430" y="460" class="b">0이 아닌가?</text>
+<rect x="110" y="515" width="510" height="95" rx="20" fill="#eef5ff"/>
+<text x="365" y="552" text-anchor="middle" class="b">비교 결과</text>
+<text x="300" y="590" text-anchor="middle" class="h" fill="#188554">True</text>
+<text x="440" y="590" text-anchor="middle" class="h" fill="#be4747">False</text>
+<rect x="730" y="190" width="640" height="470" rx="28" fill="#fffaf1" stroke="#f0d69a" stroke-width="3"/>
+<text x="770" y="240" class="h">2. 논리 연산자</text>
+<rect x="770" y="285" width="170" height="105" rx="20" fill="#eaf9f1" stroke="#42b983" stroke-width="2"/>
+<text x="855" y="325" text-anchor="middle" class="h">and</text><text x="855" y="360" text-anchor="middle" class="small">모두 참이면 True</text>
+<rect x="965" y="285" width="170" height="105" rx="20" fill="#eef5ff" stroke="#77a7f4" stroke-width="2"/>
+<text x="1050" y="325" text-anchor="middle" class="h">or</text><text x="1050" y="360" text-anchor="middle" class="small">하나라도 참이면 True</text>
+<rect x="1160" y="285" width="170" height="105" rx="20" fill="#fff1f1" stroke="#e27676" stroke-width="2"/>
+<text x="1245" y="325" text-anchor="middle" class="h">not</text><text x="1245" y="360" text-anchor="middle" class="small">참·거짓을 반대로</text>
+<text x="770" y="455" class="code">age &gt;= 18 and has_ticket</text>
+<text x="770" y="500" class="code">day == "토" or day == "일"</text>
+<text x="770" y="545" class="code">not is_closed</text>
+<rect x="770" y="575" width="555" height="55" rx="16" fill="#fff3d8"/>
+<text x="1048" y="610" text-anchor="middle" class="b">조건식을 먼저 한국어 질문으로 읽어 보세요.</text>
+<rect x="70" y="705" width="1300" height="65" rx="20" fill="#eef5ff"/>
+<text x="720" y="747" text-anchor="middle" class="b">예: 20 &lt;= age &lt; 30 → “나이가 20 이상이고 30 미만인가?”</text>
+</svg>
