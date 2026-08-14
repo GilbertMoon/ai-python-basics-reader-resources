@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">if elif else 조건 검사 흐름</title><desc id="desc">여러 조건을 위에서부터 검사하고 처음 True인 블록 하나만 실행하는 if elif else 구조를 설명하는 Chapter 09 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:27px;font-weight:700}.n{font-size:23px;font-weight:800;fill:#fff}.small{font-size:20px;font-weight:600}</style>
+<text x="70" y="90" class="t">여러 조건은 위에서부터 하나씩 검사합니다</text>
+<text x="70" y="135" class="s">처음 True가 나온 블록 하나만 실행되고 나머지는 건너뜁니다</text>
+<rect x="80" y="200" width="560" height="475" rx="28" fill="#f8fbff" stroke="#c8d9f3" stroke-width="3"/>
+<text x="120" y="250" class="h">예: score = 85</text>
+<circle cx="140" cy="325" r="28" fill="#2f6ecb"/><text x="140" y="334" text-anchor="middle" class="n">1</text>
+<rect x="195" y="285" width="330" height="80" rx="18" fill="#eef5ff" stroke="#77a7f4" stroke-width="2"/>
+<text x="360" y="335" text-anchor="middle" class="code">score &gt;= 90 ?</text>
+<text x="545" y="335" class="b" fill="#be4747">False</text>
+<line x1="360" y1="365" x2="360" y2="410" stroke="#4775d1" stroke-width="4"/>
+<polygon points="360,420 348,400 372,400" fill="#4775d1"/>
+<circle cx="140" cy="470" r="28" fill="#2f6ecb"/><text x="140" y="479" text-anchor="middle" class="n">2</text>
+<rect x="195" y="430" width="330" height="80" rx="18" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="360" y="480" text-anchor="middle" class="code">score &gt;= 80 ?</text>
+<text x="545" y="480" class="b" fill="#188554">True</text>
+<rect x="195" y="545" width="330" height="85" rx="18" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="360" y="580" text-anchor="middle" class="h">B 출력</text>
+<text x="360" y="612" text-anchor="middle" class="small">여기서 조건 검사를 종료</text>
+<rect x="700" y="200" width="660" height="475" rx="28" fill="#fffaf1" stroke="#f0d69a" stroke-width="3"/>
+<text x="745" y="250" class="h">조건 순서가 중요한 이유</text>
+<text x="745" y="300" class="b">잘못된 순서</text>
+<rect x="745" y="325" width="255" height="155" rx="18" fill="#fff1f1" stroke="#e27676" stroke-width="2"/>
+<text x="775" y="365" class="code">if score &gt;= 60:</text>
+<text x="795" y="402" class="code">print("통과")</text>
+<text x="775" y="442" class="code">elif score &gt;= 90:</text>
+<text x="1025" y="392" class="b" fill="#be4747">95점도 첫 조건에서 잡힘</text>
+<text x="745" y="535" class="b">더 좋은 순서</text>
+<rect x="745" y="555" width="255" height="90" rx="18" fill="#eaf9f1" stroke="#42b983" stroke-width="2"/>
+<text x="775" y="590" class="code">if score &gt;= 90:</text>
+<text x="775" y="625" class="code">elif score &gt;= 60:</text>
+<text x="1025" y="605" class="b" fill="#188554">구체적·높은 기준부터</text>
+<rect x="80" y="710" width="1280" height="65" rx="20" fill="#eef5ff"/>
+<text x="720" y="752" text-anchor="middle" class="b">if → elif → elif → else : 위에서부터 검사하고, 처음 True인 블록 하나만 실행합니다.</text>
+</svg>
