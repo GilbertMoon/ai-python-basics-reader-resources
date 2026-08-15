@@ -2,7 +2,7 @@
 <title id="title">딕셔너리 키와 값 구조</title>
 <desc id="desc">리스트의 위치 인덱스와 딕셔너리의 의미 있는 키 조회를 비교하고 키와 값의 쌍 구조를 설명하는 Chapter 13 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:22px;font-weight:600}.code{font-family:Consolas,monospace;font-size:25px;font-weight:700}.small{font-size:19px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:22px;font-weight:600}.code{font-family:Consolas,monospace;font-size:25px;font-weight:700}.small{font-size:19px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
 <text x="70" y="90" class="t">딕셔너리는 위치 번호보다 의미 있는 키로 값을 찾습니다</text>
 <text x="70" y="135" class="s">키(key)는 이름표, 값(value)은 실제 데이터입니다</text>
 <rect x="70" y="195" width="580" height="245" rx="28" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="3"/>
