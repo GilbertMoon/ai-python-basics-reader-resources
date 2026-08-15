@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">가상환경 생성과 프로젝트 환경 재현 흐름</title>
+<desc id="desc">프로젝트에 .venv를 만들고 활성화한 뒤 VS Code 인터프리터를 선택하고 requirements.txt로 패키지 환경을 기록하는 Chapter 15 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:21px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">가상환경은 프로젝트마다 Python과 패키지를 분리합니다</text>
+<text x="70" y="135" class="s">.venv 생성 → 활성화 → 인터프리터 선택 → 패키지 기록 순서로 확인합니다</text>
+<rect x="60" y="200" width="300" height="205" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="105" cy="242" r="23" fill="#2f6ecb"/><text x="105" y="249" text-anchor="middle" class="n">1</text><text x="145" y="250" class="h">.venv 생성</text>
+<text x="95" y="320" class="code">Windows</text><text x="95" y="355" class="code">py -m venv .venv</text>
+<text x="95" y="390" class="small">macOS/Linux: python3 -m venv .venv</text>
+<line x1="360" y1="300" x2="420" y2="300" stroke="#4775d1" stroke-width="5"/><polygon points="420,300 400,287 400,313" fill="#4775d1"/>
+<rect x="420" y="200" width="300" height="205" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="465" cy="242" r="23" fill="#2fa66d"/><text x="465" y="249" text-anchor="middle" class="n">2</text><text x="505" y="250" class="h">활성화</text>
+<text x="455" y="320" class="code">PowerShell</text><text x="455" y="355" class="code">.venv\Scripts\Activate.ps1</text>
+<text x="455" y="390" class="small">활성화 후 Python 경로도 확인</text>
+<line x1="720" y1="300" x2="780" y2="300" stroke="#2fa66d" stroke-width="5"/><polygon points="780,300 760,287 760,313" fill="#2fa66d"/>
+<rect x="780" y="200" width="300" height="205" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="825" cy="242" r="23" fill="#d8a432"/><text x="825" y="249" text-anchor="middle" class="n">3</text><text x="865" y="250" class="h">VS Code 선택</text>
+<text x="815" y="320" class="code">Python: Select</text><text x="815" y="355" class="code">Interpreter</text>
+<text x="815" y="390" class="small">프로젝트의 .venv Python 선택</text>
+<line x1="1080" y1="300" x2="1140" y2="300" stroke="#d8a432" stroke-width="5"/><polygon points="1140,300 1120,287 1120,313" fill="#d8a432"/>
+<rect x="1140" y="200" width="240" height="205" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="1185" cy="242" r="23" fill="#d85c5c"/><text x="1185" y="249" text-anchor="middle" class="n">4</text><text x="1225" y="250" class="h">환경 기록</text>
+<text x="1175" y="320" class="code">pip freeze</text>
+<text x="1175" y="355" class="code">requirements.txt</text>
+<text x="1175" y="390" class="small">다른 환경에서 재설치</text>
+<rect x="90" y="485" width="1260" height="170" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="535" class="h">현재 Python과 pip가 같은 .venv를 가리키는지 확인</text>
+<text x="130" y="595" class="code">python -c "import sys; print(sys.executable)"</text>
+<text x="130" y="635" class="code">python -m pip --version</text>
+<rect x="90" y="705" width="1260" height="70" rx="20" fill="#eef5ff"/>
+<text x="720" y="748" text-anchor="middle" class="b">.venv 폴더는 보통 Git에 올리지 않고 requirements.txt로 필요한 패키지를 기록합니다</text>
+</svg>
