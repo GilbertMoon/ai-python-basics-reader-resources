@@ -2,12 +2,12 @@
 <title id="title">딕셔너리 반복과 구조화 데이터 흐름</title>
 <desc id="desc">items 메서드로 키와 값을 함께 반복하고 여러 딕셔너리를 리스트에 담아 구조화된 데이터를 처리하는 Chapter 13 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:52px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}</style>
-<text x="70" y="90" class="t">items()로 키와 값을 반복하고, 여러 딕셔너리는 리스트로 묶습니다</text>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.codeSmall{font-family:Consolas,monospace;font-size:19px;font-weight:700}.small{font-size:18px;font-weight:600}</style>
+<text x="70" y="90" class="t">딕셔너리 반복: 키·값 처리와 여러 대상 묶기</text>
 <text x="70" y="135" class="s">한 대상의 속성은 딕셔너리, 여러 대상은 딕셔너리의 리스트로 표현할 수 있습니다</text>
 <rect x="70" y="195" width="360" height="145" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
 <text x="250" y="240" text-anchor="middle" class="h">딕셔너리 한 개</text>
-<text x="110" y="300" class="code">student = {"name": "민수",</text><text x="110" y="330" class="code">           "score": 85}</text>
+<text x="100" y="300" class="codeSmall">student = {"name": "민수",</text><text x="100" y="330" class="codeSmall">           "score": 85}</text>
 <line x1="430" y1="270" x2="535" y2="270" stroke="#4775d1" stroke-width="5"/><polygon points="535,270 515,257 515,283" fill="#4775d1"/>
 <rect x="535" y="195" width="365" height="145" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
 <text x="717" y="240" text-anchor="middle" class="h">items()로 한 쌍씩</text>
