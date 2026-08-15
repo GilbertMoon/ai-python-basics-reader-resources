@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">예외 처리 디버깅 체크리스트</title>
+<desc id="desc">구체적인 예외 이름 선택, 파일 경로 확인, 함수 반환값 확인, 넓은 except를 피하는 방법을 정리한 Chapter 17 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:38px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.n{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">예외 처리는 오류를 숨기는 것이 아니라 예상한 문제에 대응하는 것입니다</text>
+<text x="70" y="132" class="s">예외 이름·원인·복구 방법을 구체적으로 적을수록 디버깅하기 쉽습니다</text>
+<rect x="60" y="190" width="300" height="345" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="105" cy="232" r="23" fill="#2f6ecb"/><text x="105" y="239" text-anchor="middle" class="n">1</text><text x="145" y="240" class="h">예외 이름 확인</text>
+<text x="90" y="305" class="code">ValueError</text>
+<text x="90" y="345" class="code">ZeroDivisionError</text>
+<text x="90" y="385" class="code">FileNotFoundError</text>
+<text x="90" y="445" class="small">발생 가능한 예외를 구체적으로 선택</text>
+<text x="90" y="480" class="small">서로 다른 예외는 다른 안내로 대응</text>
+<rect x="390" y="190" width="300" height="345" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="435" cy="232" r="23" fill="#d8a432"/><text x="435" y="239" text-anchor="middle" class="n">2</text><text x="475" y="240" class="h">파일 예외</text>
+<text x="420" y="315" class="code">FileNotFoundError</text>
+<text x="420" y="375" class="small">안내만 출력하고 끝내지 말고</text>
+<text x="420" y="410" class="small">파일 이름과 실제 경로도 확인</text>
+<text x="420" y="465" class="code">Path("message.txt")</text>
+<text x="420" y="500" class="small">Chapter 16의 경로 점검과 연결</text>
+<rect x="720" y="190" width="300" height="345" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="765" cy="232" r="23" fill="#2fa66d"/><text x="765" y="239" text-anchor="middle" class="n">3</text><text x="805" y="240" class="h">함수 안 처리</text>
+<text x="750" y="310" class="code">def safe_divide(a, b):</text>
+<text x="770" y="350" class="code">try: return a / b</text>
+<text x="750" y="410" class="small">함수 안에서 처리했다면</text>
+<text x="750" y="445" class="small">실패 시 무엇을 반환하는지도 확인</text>
+<text x="750" y="495" class="small">호출하는 쪽의 기대값과 연결해 점검</text>
+<rect x="1050" y="190" width="330" height="345" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="1095" cy="232" r="23" fill="#d85c5c"/><text x="1095" y="239" text-anchor="middle" class="n">4</text><text x="1135" y="240" class="h">넓은 except 피하기</text>
+<text x="1080" y="315" class="code">except:</text>
+<text x="1080" y="355" class="code">    print("오류")</text>
+<text x="1080" y="415" class="small">예상하지 못한 문제까지 숨길 수 있음</text>
+<text x="1080" y="465" class="code">except ValueError:</text>
+<text x="1080" y="500" class="small">예상한 문제를 구체적으로 처리</text>
+<rect x="70" y="600" width="1295" height="140" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="645" class="h">DEBUG CHECKLIST</text>
+<text x="110" y="690" class="b">1. 트레이스백 마지막 줄 · 2. 예외 이름 · 3. 실제 입력/경로 · 4. 복구 방법 · 5. 예상하지 못한 오류를 숨기지 않았는지</text>
+</svg>
