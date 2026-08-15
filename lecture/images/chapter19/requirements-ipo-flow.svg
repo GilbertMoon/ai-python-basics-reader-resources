@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">요구사항과 입력 처리 출력 설계 흐름</title>
+<desc id="desc">프로그램 목적과 범위를 정하고 요구사항을 작성한 뒤 입력 처리 출력으로 나누어 설계하는 Chapter 19 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:18px;font-weight:600}.small{font-size:15px;font-weight:600}.tag{font-size:18px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">AI에게 코드를 요청하기 전에 사람이 문제와 범위를 먼저 정합니다</text>
+<text x="70" y="132" class="s">목표가 분명할수록 AI의 제안도 검토하기 쉽고 프로그램이 불필요하게 커지지 않습니다</text>
+<rect x="70" y="190" width="360" height="210" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="105" y="220" width="120" height="38" rx="19" fill="#2f6ecb"/><text x="165" y="247" text-anchor="middle" class="tag">1. 목적</text>
+<text x="105" y="310" class="h">무엇을 만들까?</text>
+<text x="105" y="350" class="b">개인 지출 요약 콘솔 프로그램</text>
+<text x="105" y="380" class="small">GUI·DB는 이번 범위에서 제외</text>
+<line x1="430" y1="295" x2="500" y2="295" stroke="#4775d1" stroke-width="5"/><polygon points="500,295 480,282 480,308" fill="#4775d1"/>
+<rect x="500" y="190" width="370" height="210" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="535" y="220" width="145" height="38" rx="19" fill="#d8a432"/><text x="608" y="247" text-anchor="middle" class="tag">2. 요구사항</text>
+<text x="535" y="310" class="b">• 날짜·카테고리·금액 저장</text>
+<text x="535" y="345" class="b">• 전체 합계 계산</text>
+<text x="535" y="380" class="b">• 카테고리별 합계 출력</text>
+<line x1="870" y1="295" x2="940" y2="295" stroke="#d8a432" stroke-width="5"/><polygon points="940,295 920,282 920,308" fill="#d8a432"/>
+<rect x="940" y="190" width="430" height="210" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="975" y="220" width="150" height="38" rx="19" fill="#2fa66d"/><text x="1050" y="247" text-anchor="middle" class="tag">3. 범위 확인</text>
+<text x="975" y="310" class="b">할 것과 하지 않을 것을 함께 적기</text>
+<text x="975" y="350" class="small">초보자가 이해할 수 있는 문법 수준 유지</text>
+<text x="975" y="380" class="small">한 번에 모든 기능을 넣지 않기</text>
+<rect x="90" y="475" width="1260" height="220" rx="28" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="520" class="h">입력 → 처리 → 출력으로 다시 나누기</text>
+<rect x="130" y="555" width="300" height="95" rx="20" fill="#eef5ff"/><text x="280" y="590" text-anchor="middle" class="h">INPUT · 입력</text><text x="280" y="625" text-anchor="middle" class="small">날짜 · 카테고리 · 금액 목록</text>
+<text x="465" y="610" class="h">→</text>
+<rect x="520" y="555" width="360" height="95" rx="20" fill="#fffaf1"/><text x="700" y="590" text-anchor="middle" class="h">PROCESS · 처리</text><text x="700" y="625" text-anchor="middle" class="small">전체 합계 · 카테고리별 누적</text>
+<text x="915" y="610" class="h">→</text>
+<rect x="970" y="555" width="300" height="95" rx="20" fill="#eaf9f1"/><text x="1120" y="590" text-anchor="middle" class="h">OUTPUT · 출력</text><text x="1120" y="625" text-anchor="middle" class="small">총액과 카테고리별 결과</text>
+<rect x="90" y="735" width="1260" height="45" rx="16" fill="#eef5ff"/>
+<text x="720" y="765" text-anchor="middle" class="b">목적 → 요구사항 → 범위 → 입력·처리·출력 순서로 정리한 뒤 코딩을 시작합니다</text>
+</svg>
