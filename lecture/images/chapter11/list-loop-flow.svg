@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">리스트와 for문 처리 흐름</title><desc id="desc">리스트의 값을 for문으로 하나씩 꺼내 처리하고 sum min max로 집계하는 흐름을 설명하는 Chapter 11 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:22px;font-weight:600}.code{font-family:Consolas,monospace;font-size:25px;font-weight:700}.small{font-size:19px;font-weight:600}</style>
+<text x="70" y="90" class="t">리스트와 for문을 연결하면 여러 값을 같은 방식으로 처리할 수 있습니다</text>
+<text x="70" y="135" class="s">Chapter 10의 반복문이 Chapter 11의 리스트와 만나 실제 데이터 처리가 시작됩니다</text>
+<rect x="70" y="205" width="345" height="150" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="242" y="252" text-anchor="middle" class="h">리스트 준비</text><text x="242" y="305" text-anchor="middle" class="code">scores = [85, 92, 78]</text>
+<line x1="415" y1="280" x2="525" y2="280" stroke="#4775d1" stroke-width="5"/><polygon points="525,280 505,267 505,293" fill="#4775d1"/>
+<rect x="525" y="205" width="365" height="150" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="707" y="252" text-anchor="middle" class="h">값 하나씩 꺼내기</text><text x="707" y="305" text-anchor="middle" class="code">for score in scores:</text>
+<line x1="890" y1="280" x2="1000" y2="280" stroke="#2fa66d" stroke-width="5"/><polygon points="1000,280 980,267 980,293" fill="#2fa66d"/>
+<rect x="1000" y="205" width="370" height="150" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<text x="1185" y="252" text-anchor="middle" class="h">같은 작업 반복</text><text x="1185" y="305" text-anchor="middle" class="code">print(score)</text>
+<path d="M1185 355 C1185 445 707 445 707 365" fill="none" stroke="#4775d1" stroke-width="5" stroke-dasharray="12 10"/><polygon points="707,365 694,385 720,385" fill="#4775d1"/>
+<text x="945" y="430" text-anchor="middle" class="b">다음 값이 있으면 계속 반복</text>
+<rect x="90" y="500" width="1260" height="175" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="548" class="h">숫자 리스트는 집계 함수로 빠르게 확인</text>
+<text x="130" y="605" class="code">sum(scores)</text><text x="360" y="605" class="b">→ 255</text>
+<text x="560" y="605" class="code">min(scores)</text><text x="790" y="605" class="b">→ 78</text>
+<text x="960" y="605" class="code">max(scores)</text><text x="1190" y="605" class="b">→ 92</text>
+<text x="130" y="650" class="small">반복문은 개별 처리에, sum/min/max는 간단한 전체 집계에 잘 맞습니다.</text>
+<rect x="90" y="715" width="1260" height="55" rx="18" fill="#eef5ff"/>
+<text x="720" y="750" text-anchor="middle" class="b">리스트에 저장 → 하나씩 반복 → 필요한 처리 또는 집계</text>
+</svg>
