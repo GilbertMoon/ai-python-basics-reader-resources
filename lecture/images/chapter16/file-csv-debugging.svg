@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">파일과 CSV 오류 디버깅 체크리스트</title>
+<desc id="desc">FileNotFoundError, 인코딩 문제, DictReader KeyError, 숫자 변환 ValueError를 순서대로 점검하는 Chapter 16 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:25px;font-weight:800}.b{font-size:19px;font-weight:600}.code{font-family:Consolas,monospace;font-size:19px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">파일 오류는 코드보다 위치·인코딩·열 이름·데이터부터 확인합니다</text>
+<text x="70" y="135" class="s">오류 메시지와 실제 파일 상태를 한 단계씩 비교하면 원인을 빠르게 찾을 수 있습니다</text>
+<rect x="70" y="190" width="305" height="355" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="232" r="24" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">파일 위치</text>
+<text x="100" y="305" class="code">FileNotFoundError</text>
+<text x="100" y="365" class="small">파일 이름과 확장자 확인</text>
+<text x="100" y="400" class="small">폴더 경로와 실행 기준 위치 확인</text>
+<text x="100" y="455" class="code">Path(...)</text>
+<text x="100" y="495" class="small">실제 경로를 출력해 비교</text>
+<rect x="400" y="190" width="305" height="355" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="445" cy="232" r="24" fill="#d8a432"/><text x="445" y="239" text-anchor="middle" class="n">2</text><text x="485" y="240" class="h">문자 인코딩</text>
+<text x="430" y="305" class="code">문자가 깨짐</text>
+<text x="430" y="365" class="small">파일의 실제 인코딩과</text>
+<text x="430" y="400" class="small">encoding 설정이 같은지 확인</text>
+<text x="430" y="455" class="code">utf-8 / utf-8-sig</text>
+<text x="430" y="495" class="small">CSV는 BOM 여부도 확인</text>
+<rect x="730" y="190" width="305" height="355" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="775" cy="232" r="24" fill="#2f6ecb"/><text x="775" y="239" text-anchor="middle" class="n">3</text><text x="815" y="240" class="h">열 이름</text>
+<text x="760" y="305" class="code">KeyError</text>
+<text x="760" y="365" class="small">DictReader의 키 이름과</text>
+<text x="760" y="400" class="small">CSV 첫 행의 열 이름 비교</text>
+<text x="760" y="455" class="code">row["price"]</text>
+<text x="760" y="495" class="small">철자와 공백까지 확인</text>
+<rect x="1060" y="190" width="305" height="355" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1105" cy="232" r="24" fill="#2fa66d"/><text x="1105" y="239" text-anchor="middle" class="n">4</text><text x="1145" y="240" class="h">숫자 변환</text>
+<text x="1090" y="305" class="code">ValueError</text>
+<text x="1090" y="365" class="small">int()·float() 전에 실제 값을</text>
+<text x="1090" y="400" class="small">먼저 출력해 확인합니다</text>
+<text x="1090" y="455" class="code">int("45,000")</text>
+<text x="1090" y="495" class="small">숫자가 아닌 문자가 있으면 실패</text>
+<rect x="70" y="605" width="1295" height="135" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="648" class="h">DEBUG CHECKLIST</text>
+<text x="110" y="690" class="b">1. 실제 파일 위치 · 2. 인코딩 · 3. CSV 헤더와 키 이름 · 4. 변환 전 원본 값 · 5. w 모드가 기존 내용을 덮어썼는지 확인</text>
+</svg>
