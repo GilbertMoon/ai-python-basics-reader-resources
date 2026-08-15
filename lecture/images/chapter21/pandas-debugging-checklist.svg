@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">pandas 시작 단계 오류 디버깅 체크리스트</title>
+<desc id="desc">ModuleNotFoundError FileNotFoundError KeyError와 예상과 다른 자료형 문제를 환경 경로 열 이름 자료형 순서로 점검하는 Chapter 21 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:38px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:23px;font-weight:800}.b{font-size:17px;font-weight:600}.code{font-family:Consolas,monospace;font-size:16px;font-weight:700}.small{font-size:14px;font-weight:600}.n{font-size:18px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">pandas 오류는 환경 → 파일 경로 → 열 이름 → 자료형 순서로 점검합니다</text>
+<text x="70" y="132" class="s">오류 메시지와 df.columns·df.dtypes를 함께 보면 어디를 먼저 볼지 결정하기 쉽습니다</text>
+<rect x="60" y="190" width="315" height="280" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="100" cy="230" r="22" fill="#d85c5c"/><text x="100" y="237" text-anchor="middle" class="n">1</text><text x="140" y="238" class="h">pandas를 못 찾음</text>
+<text x="95" y="300" class="code">ModuleNotFoundError</text>
+<text x="95" y="340" class="small">현재 Python 환경에 설치되었는지 확인</text>
+<text x="95" y="375" class="code">python -m pip show pandas</text>
+<text x="95" y="420" class="small">VS Code .venv 인터프리터도 점검</text>
+<rect x="400" y="190" width="315" height="280" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="440" cy="230" r="22" fill="#d8a432"/><text x="440" y="237" text-anchor="middle" class="n">2</text><text x="480" y="238" class="h">CSV를 못 찾음</text>
+<text x="435" y="300" class="code">FileNotFoundError</text>
+<text x="435" y="340" class="small">파일 이름과 실제 위치를 먼저 확인</text>
+<text x="435" y="380" class="small">실행 위치에 의존한다면 Path로 경로 준비</text>
+<text x="435" y="420" class="code">print(file_path)</text>
+<rect x="740" y="190" width="315" height="280" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="780" cy="230" r="22" fill="#2f6ecb"/><text x="780" y="237" text-anchor="middle" class="n">3</text><text x="820" y="238" class="h">열 이름이 다름</text>
+<text x="775" y="300" class="code">KeyError: 'Price'</text>
+<text x="775" y="340" class="small">실제 열은 price일 수 있음</text>
+<text x="775" y="380" class="code">print(df.columns)</text>
+<text x="775" y="420" class="small">대소문자·공백·철자를 그대로 비교</text>
+<rect x="1080" y="190" width="300" height="280" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1120" cy="230" r="22" fill="#2fa66d"/><text x="1120" y="237" text-anchor="middle" class="n">4</text><text x="1160" y="238" class="h">자료형이 예상과 다름</text>
+<text x="1115" y="300" class="code">print(df.dtypes)</text>
+<text x="1115" y="345" class="small">숫자로 계산할 열이 숫자인지 확인</text>
+<text x="1115" y="385" class="small">원본 값에 문자·기호가 섞였는지 점검</text>
+<text x="1115" y="425" class="small">바로 변환하기 전에 원인을 먼저 확인</text>
+<rect x="90" y="535" width="1260" height="165" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="580" class="h">문제가 생기면 코드 전체를 바꾸기 전에 확인할 것</text>
+<text x="130" y="625" class="b">환경</text><text x="220" y="625" class="small">어느 Python에서 실행 중인가?</text>
+<text x="520" y="625" class="b">경로</text><text x="610" y="625" class="small">CSV가 실제로 그 위치에 있는가?</text>
+<text x="930" y="625" class="b">구조</text><text x="1020" y="625" class="small">열 이름·자료형이 예상과 같은가?</text>
+<text x="130" y="670" class="small">AI에게 질문할 때도 오류 메시지와 함께 df.columns 또는 df.dtypes 결과를 제공하면 원인 범위를 더 빨리 좁힐 수 있습니다</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">환경 확인 → 파일 위치 확인 → df.columns → df.dtypes → 원본 데이터 확인</text>
+</svg>
