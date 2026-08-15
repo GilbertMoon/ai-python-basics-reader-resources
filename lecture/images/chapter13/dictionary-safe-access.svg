@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">딕셔너리 안전 조회 방법</title>
+<desc id="desc">대괄호 조회와 get 메서드, in 연산자를 비교해 존재하지 않는 키를 안전하게 다루는 방법을 설명하는 Chapter 13 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">키가 없을 수도 있다면 조회 방법을 먼저 선택합니다</text>
+<text x="70" y="135" class="s">반드시 필요한 값인지, 선택적인 값인지에 따라 []와 get()을 구분합니다</text>
+<rect x="70" y="195" width="400" height="350" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<rect x="105" y="225" width="120" height="40" rx="20" fill="#d85c5c"/><text x="165" y="253" text-anchor="middle" class="tag">대괄호 [ ]</text>
+<text x="105" y="325" class="code">student["city"]</text>
+<text x="105" y="385" class="b">키가 있으면 값을 반환</text>
+<text x="105" y="430" class="b">키가 없으면</text>
+<text x="105" y="475" class="code">KeyError</text>
+<text x="105" y="520" class="small">반드시 존재해야 하는 키를 읽을 때 적합</text>
+<rect x="520" y="195" width="400" height="350" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="555" y="225" width="120" height="40" rx="20" fill="#2f6ecb"/><text x="615" y="253" text-anchor="middle" class="tag">get()</text>
+<text x="555" y="325" class="code">student.get("city")</text>
+<text x="555" y="385" class="b">키가 있으면 값을 반환</text>
+<text x="555" y="430" class="b">키가 없으면 None 또는 기본값</text>
+<text x="555" y="475" class="code">get("city", "정보 없음")</text>
+<text x="555" y="520" class="small">없을 수도 있는 선택적 정보에 적합</text>
+<rect x="970" y="195" width="400" height="350" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="1005" y="225" width="120" height="40" rx="20" fill="#2fa66d"/><text x="1065" y="253" text-anchor="middle" class="tag">in</text>
+<text x="1005" y="325" class="code">"score" in student</text>
+<text x="1005" y="385" class="b">키 존재 여부를 True / False로 확인</text>
+<text x="1005" y="445" class="code">if "score" in student:</text>
+<text x="1025" y="485" class="code">print(student["score"])</text>
+<text x="1005" y="520" class="small">조회나 삭제 전에 존재 여부를 검사</text>
+<rect x="70" y="610" width="1300" height="120" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="658" class="h">선택 기준</text>
+<text x="110" y="705" class="b">반드시 있어야 함 → [ ] · 없을 수도 있음 → get() · 먼저 존재 여부 확인 → in</text>
+<rect x="70" y="760" width="1300" height="25" rx="10" fill="#eef5ff"/>
+</svg>
