@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">클래스와 객체 오류 디버깅 체크리스트</title>
+<desc id="desc">self 누락, __init__ 인수 개수 불일치, 존재하지 않는 속성의 AttributeError를 점검하는 Chapter 18 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:38px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.n{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">클래스 오류는 self·인수 개수·속성 이름부터 확인합니다</text>
+<text x="70" y="132" class="s">TypeError와 AttributeError를 구분하면 어디를 먼저 볼지 결정하기 쉽습니다</text>
+<rect x="70" y="190" width="395" height="365" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="232" r="23" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">메서드의 self 누락</text>
+<text x="105" y="310" class="code">def show_result():</text>
+<text x="105" y="350" class="code">    print(self.name)</text>
+<text x="105" y="410" class="small">객체 메서드의 첫 매개변수에</text>
+<text x="105" y="445" class="small">self가 있는지 먼저 확인합니다</text>
+<text x="105" y="500" class="code">def show_result(self):</text>
+<rect x="520" y="190" width="395" height="365" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="565" cy="232" r="23" fill="#d8a432"/><text x="565" y="239" text-anchor="middle" class="n">2</text><text x="605" y="240" class="h">필요한 인수 누락</text>
+<text x="555" y="310" class="code">Student("민수")</text>
+<text x="555" y="365" class="b">→ TypeError</text>
+<text x="555" y="420" class="small">__init__(self, name, score)라면</text>
+<text x="555" y="455" class="small">name과 score 두 값을 전달해야 합니다</text>
+<text x="555" y="505" class="small">매개변수 개수와 호출 인수를 비교</text>
+<rect x="970" y="190" width="400" height="365" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="1015" cy="232" r="23" fill="#2f6ecb"/><text x="1015" y="239" text-anchor="middle" class="n">3</text><text x="1055" y="240" class="h">없는 속성 사용</text>
+<text x="1005" y="310" class="code">print(student.grade)</text>
+<text x="1005" y="365" class="b">→ AttributeError</text>
+<text x="1005" y="420" class="small">__init__에서 만든 속성 이름과</text>
+<text x="1005" y="455" class="small">사용한 이름이 일치하는지 확인</text>
+<text x="1005" y="505" class="code">self.score ↔ student.score</text>
+<rect x="90" y="615" width="1260" height="130" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="657" class="h">DEBUG CHECKLIST</text>
+<text x="130" y="700" class="b">1. 클래스 이름 · 2. __init__ 매개변수/인수 · 3. 메서드 첫 self · 4. self.name과 사용한 속성 이름 · 5. TypeError/AttributeError 구분</text>
+</svg>
