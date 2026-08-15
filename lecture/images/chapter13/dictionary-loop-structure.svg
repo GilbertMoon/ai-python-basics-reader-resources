@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">딕셔너리 반복과 구조화 데이터 흐름</title>
+<desc id="desc">items 메서드로 키와 값을 함께 반복하고 여러 딕셔너리를 리스트에 담아 구조화된 데이터를 처리하는 Chapter 13 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:52px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}</style>
+<text x="70" y="90" class="t">items()로 키와 값을 반복하고, 여러 딕셔너리는 리스트로 묶습니다</text>
+<text x="70" y="135" class="s">한 대상의 속성은 딕셔너리, 여러 대상은 딕셔너리의 리스트로 표현할 수 있습니다</text>
+<rect x="70" y="195" width="360" height="145" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="250" y="240" text-anchor="middle" class="h">딕셔너리 한 개</text>
+<text x="110" y="300" class="code">student = {"name": "민수",</text><text x="110" y="330" class="code">           "score": 85}</text>
+<line x1="430" y1="270" x2="535" y2="270" stroke="#4775d1" stroke-width="5"/><polygon points="535,270 515,257 515,283" fill="#4775d1"/>
+<rect x="535" y="195" width="365" height="145" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="717" y="240" text-anchor="middle" class="h">items()로 한 쌍씩</text>
+<text x="575" y="300" class="code">for key, value in</text><text x="575" y="330" class="code">    student.items():</text>
+<line x1="900" y1="270" x2="1005" y2="270" stroke="#2fa66d" stroke-width="5"/><polygon points="1005,270 985,257 985,283" fill="#2fa66d"/>
+<rect x="1005" y="195" width="365" height="145" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<text x="1187" y="240" text-anchor="middle" class="h">키·값 함께 처리</text>
+<text x="1045" y="300" class="code">print(key, value)</text>
+<text x="1045" y="330" class="small">name 민수 → score 85</text>
+<rect x="90" y="425" width="1260" height="245" rx="28" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="475" class="h">대상이 여러 개라면 딕셔너리를 리스트에 담기</text>
+<text x="130" y="530" class="code">students = [</text>
+<text x="165" y="570" class="code">{"name": "민수", "score": 85},</text>
+<text x="165" y="610" class="code">{"name": "지영", "score": 92}</text>
+<text x="130" y="650" class="code">]</text>
+<text x="800" y="535" class="b">바깥 for → 학생 한 명씩</text>
+<text x="800" y="580" class="code">for student in students:</text>
+<text x="840" y="620" class="code">print(student["name"])</text>
+<text x="800" y="655" class="small">표의 여러 행처럼 구조화된 데이터를 표현할 수 있습니다.</text>
+<rect x="90" y="720" width="1260" height="55" rx="18" fill="#eef5ff"/>
+<text x="720" y="755" text-anchor="middle" class="b">한 대상 = 딕셔너리 · 여러 대상 = 딕셔너리의 리스트</text>
+</svg>
