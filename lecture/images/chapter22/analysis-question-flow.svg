@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">질문에서 pandas 분석 기능을 선택하는 흐름</title>
+<desc id="desc">총 매출 카테고리별 매출 채널 비교 높은 매출 기록이라는 질문에서 계산 열 빈도 정렬 그룹화 기능을 선택하는 Chapter 22 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:39px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:16px;font-weight:700}</style>
+<text x="70" y="88" class="t">pandas 분석은 함수보다 “무슨 질문에 답할까?”에서 시작합니다</text>
+<text x="70" y="132" class="s">질문이 정해지면 필요한 열·계산·필터링·집계 방법을 선택할 수 있습니다</text>
+<rect x="60" y="195" width="315" height="285" rx="25" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="95" y="225" width="92" height="38" rx="19" fill="#2f6ecb"/><text x="141" y="252" text-anchor="middle" class="tag">Q1</text>
+<text x="95" y="315" class="h">총 매출은?</text>
+<text x="95" y="365" class="code">price * quantity</text>
+<text x="95" y="410" class="small">계산 열 sales_amount 만들기</text>
+<text x="95" y="445" class="small">그 뒤 sum()으로 전체 합계</text>
+<rect x="400" y="195" width="315" height="285" rx="25" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="435" y="225" width="92" height="38" rx="19" fill="#d8a432"/><text x="481" y="252" text-anchor="middle" class="tag">Q2</text>
+<text x="435" y="315" class="h">어떤 카테고리가 큰가?</text>
+<text x="435" y="365" class="code">groupby("category")</text>
+<text x="435" y="405" class="code">["sales_amount"].sum()</text>
+<text x="435" y="445" class="small">같은 값끼리 묶고 합계 비교</text>
+<rect x="740" y="195" width="315" height="285" rx="25" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="775" y="225" width="92" height="38" rx="19" fill="#2fa66d"/><text x="821" y="252" text-anchor="middle" class="tag">Q3</text>
+<text x="775" y="315" class="h">온라인과 오프라인은?</text>
+<text x="775" y="365" class="code">value_counts()</text>
+<text x="775" y="405" class="small">판매 기록 건수 비교</text>
+<text x="775" y="445" class="small">매출 비교는 groupby().sum()</text>
+<rect x="1080" y="195" width="300" height="285" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1115" y="225" width="92" height="38" rx="19" fill="#7d64bd"/><text x="1161" y="252" text-anchor="middle" class="tag">Q4</text>
+<text x="1115" y="315" class="h">큰 판매 기록은?</text>
+<text x="1115" y="365" class="code">sort_values(...)</text>
+<text x="1115" y="405" class="small">내림차순으로 큰 값부터</text>
+<text x="1115" y="445" class="small">또는 조건으로 행 필터링</text>
+<rect x="90" y="545" width="1260" height="150" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="590" class="h">같은 데이터라도 질문이 달라지면 필요한 계산도 달라집니다</text>
+<text x="130" y="635" class="b">“가장 많이 팔렸다” = 판매 건수? 판매 수량? 매출 금액?</text>
+<text x="130" y="670" class="small">집계 함수를 고르기 전에 지표의 의미를 문장으로 먼저 정의하면 분석 결과를 잘못 해석하는 일을 줄일 수 있습니다</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">질문 정의 → 필요한 열 확인 → 계산 열·빈도·정렬·그룹화 선택 → 결과 검증</text>
+</svg>
