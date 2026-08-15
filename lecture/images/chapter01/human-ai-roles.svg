@@ -4,10 +4,27 @@
 <style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#13275f}.title{font-size:60px;font-weight:800}.sub{font-size:30px;font-weight:800;fill:#2364d8}.head{font-size:34px;font-weight:800;fill:#fff}.item{font-size:25px;font-weight:650}.num{font-size:23px;font-weight:800;fill:#fff}.foot{font-size:38px;font-weight:850}</style>
 <text x="720" y="85" text-anchor="middle" class="title">사람과 AI의 역할 분담</text>
 <text x="720" y="135" text-anchor="middle" class="sub">AI는 정답지가 아니라 학습을 돕는 파트너</text>
-<rect x="80" y="190" width="555" height="440" rx="26" fill="#f8fbff" stroke="#2468dd" stroke-width="3"/><rect x="80" y="190" width="555" height="82" rx="26" fill="#1768d9"/><rect x="80" y="246" width="555" height="26" fill="#1768d9"/><text x="357" y="244" text-anchor="middle" class="head">사람이 해야 할 일</text>
-<g><circle cx="135" cy="325" r="24" fill="#1768d9"/><text x="135" y="334" text-anchor="middle" class="num">1</text><text x="185" y="334" class="item">문제와 목표를 정의하기</text><circle cx="135" cy="390" r="24" fill="#1768d9"/><text x="135" y="399" text-anchor="middle" class="num">2</text><text x="185" y="399" class="item">AI가 만든 코드의 의미 이해하기</text><circle cx="135" cy="455" r="24" fill="#1768d9"/><text x="135" y="464" text-anchor="middle" class="num">3</text><text x="185" y="464" class="item">코드를 직접 실행하고 결과 확인하기</text><circle cx="135" cy="520" r="24" fill="#1768d9"/><text x="135" y="529" text-anchor="middle" class="num">4</text><text x="185" y="529" class="item">오류 원인을 추적하고 판단하기</text><circle cx="135" cy="585" r="24" fill="#1768d9"/><text x="135" y="594" text-anchor="middle" class="num">5</text><text x="185" y="594" class="item">최종 결정과 책임을 맡기</text></g>
-<rect x="805" y="190" width="555" height="440" rx="26" fill="#f5fffd" stroke="#119c96" stroke-width="3"/><rect x="805" y="190" width="555" height="82" rx="26" fill="#119c96"/><rect x="805" y="246" width="555" height="26" fill="#119c96"/><text x="1082" y="244" text-anchor="middle" class="head">AI가 도와주는 일</text>
-<g><circle cx="860" cy="325" r="24" fill="#119c96"/><text x="860" y="334" text-anchor="middle" class="num">1</text><text x="910" y="334" class="item">간단한 예제 코드 제안하기</text><circle cx="860" cy="390" r="24" fill="#119c96"/><text x="860" y="399" text-anchor="middle" class="num">2</text><text x="910" y="399" class="item">어려운 개념을 다시 설명하기</text><circle cx="860" cy="455" r="24" fill="#119c96"/><text x="860" y="464" text-anchor="middle" class="num">3</text><text x="910" y="464" class="item">오류 메시지와 코드 분석하기</text><circle cx="860" cy="520" r="24" fill="#119c96"/><text x="860" y="529" text-anchor="middle" class="num">4</text><text x="910" y="529" class="item">리팩터링 아이디어 제안하기</text><circle cx="860" cy="585" r="24" fill="#119c96"/><text x="860" y="594" text-anchor="middle" class="num">5</text><text x="910" y="594" class="item">다음 단계 힌트와 테스트 제안하기</text></g>
+<rect x="80" y="190" width="555" height="440" rx="26" fill="#f8fbff" stroke="#2468dd" stroke-width="3"/>
+<rect x="80" y="190" width="555" height="82" rx="26" fill="#1768d9"/><rect x="80" y="246" width="555" height="26" fill="#1768d9"/>
+<text x="357" y="244" text-anchor="middle" class="head">사람이 해야 할 일</text>
+<g>
+<circle cx="135" cy="325" r="24" fill="#1768d9"/><text x="135" y="334" text-anchor="middle" class="num">1</text><text x="185" y="334" class="item">문제와 목표를 정의하기</text>
+<circle cx="135" cy="390" r="24" fill="#1768d9"/><text x="135" y="399" text-anchor="middle" class="num">2</text><text x="185" y="399" class="item">AI가 만든 코드의 의미 이해하기</text>
+<circle cx="135" cy="455" r="24" fill="#1768d9"/><text x="135" y="464" text-anchor="middle" class="num">3</text><text x="185" y="464" class="item">코드를 직접 실행하고 결과 확인하기</text>
+<circle cx="135" cy="520" r="24" fill="#1768d9"/><text x="135" y="529" text-anchor="middle" class="num">4</text><text x="185" y="529" class="item">오류 원인을 추적하고 판단하기</text>
+<circle cx="135" cy="585" r="24" fill="#1768d9"/><text x="135" y="594" text-anchor="middle" class="num">5</text><text x="185" y="594" class="item">최종 결정과 책임을 맡기</text>
+</g>
+<rect x="805" y="190" width="555" height="440" rx="26" fill="#f5fffd" stroke="#119c96" stroke-width="3"/>
+<rect x="805" y="190" width="555" height="82" rx="26" fill="#119c96"/><rect x="805" y="246" width="555" height="26" fill="#119c96"/>
+<text x="1082" y="244" text-anchor="middle" class="head">AI가 도와주는 일</text>
+<g>
+<circle cx="860" cy="325" r="24" fill="#119c96"/><text x="860" y="334" text-anchor="middle" class="num">1</text><text x="910" y="334" class="item">간단한 예제 코드 제안하기</text>
+<circle cx="860" cy="390" r="24" fill="#119c96"/><text x="860" y="399" text-anchor="middle" class="num">2</text><text x="910" y="399" class="item">어려운 개념을 다시 설명하기</text>
+<circle cx="860" cy="455" r="24" fill="#119c96"/><text x="860" y="464" text-anchor="middle" class="num">3</text><text x="910" y="464" class="item">오류 메시지와 코드 분석하기</text>
+<circle cx="860" cy="520" r="24" fill="#119c96"/><text x="860" y="529" text-anchor="middle" class="num">4</text><text x="910" y="529" class="item">리팩터링 아이디어 제안하기</text>
+<circle cx="860" cy="585" r="24" fill="#119c96"/><text x="860" y="594" text-anchor="middle" class="num">5</text><text x="910" y="594" class="item">다음 단계 힌트와 테스트 제안하기</text>
+</g>
 <circle cx="720" cy="410" r="72" fill="#fff" stroke="#62a4e9" stroke-width="5"/><text x="720" y="400" text-anchor="middle" font-size="46px" font-weight="800" fill="#1768d9">↔</text><text x="720" y="445" text-anchor="middle" font-size="24px" font-weight="800">협업</text>
-<rect x="90" y="665" width="1260" height="90" rx="22" fill="#f3f8ff" stroke="#76a6ff" stroke-width="2"/><text x="720" y="722" text-anchor="middle" class="foot">좋은 학습 = 사람이 주도하고 AI가 지원한다</text>
+<rect x="90" y="665" width="1260" height="90" rx="22" fill="#f3f8ff" stroke="#76a6ff" stroke-width="2"/>
+<text x="720" y="722" text-anchor="middle" class="foot">좋은 학습 = 사람이 주도하고 AI가 지원한다</text>
 </svg>
