@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">import와 pip의 역할 구분</title>
+<desc id="desc">표준 라이브러리는 바로 import하고 외부 패키지는 pip로 설치한 뒤 import하는 흐름과 import 문법을 설명하는 Chapter 15 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">pip는 설치하고, import는 코드에서 불러옵니다</text>
+<text x="70" y="135" class="s">표준 라이브러리와 외부 패키지를 먼저 구분하면 흐름이 쉬워집니다</text>
+<rect x="70" y="195" width="620" height="325" rx="28" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="110" y="225" width="170" height="40" rx="20" fill="#2f6ecb"/><text x="195" y="253" text-anchor="middle" class="tag">표준 라이브러리</text>
+<text x="110" y="325" class="code">import math</text>
+<text x="110" y="375" class="code">math.sqrt(81)</text>
+<text x="110" y="435" class="b">Python과 함께 제공</text>
+<text x="110" y="475" class="small">별도의 pip 설치 없이 바로 import 가능</text>
+<rect x="750" y="195" width="620" height="325" rx="28" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="790" y="225" width="150" height="40" rx="20" fill="#2fa66d"/><text x="865" y="253" text-anchor="middle" class="tag">외부 패키지</text>
+<text x="790" y="315" class="code">python -m pip install requests</text>
+<text x="790" y="375" class="code">import requests</text>
+<text x="790" y="435" class="b">다른 개발자가 배포한 패키지</text>
+<text x="790" y="475" class="small">현재 Python 환경에 설치한 뒤 코드에서 import</text>
+<rect x="90" y="575" width="1260" height="125" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="620" class="h">import 문법 세 가지</text>
+<text x="130" y="665" class="code">import math</text>
+<text x="480" y="665" class="code">from math import sqrt</text>
+<text x="900" y="665" class="code">import statistics as stats</text>
+<rect x="90" y="735" width="1260" height="45" rx="16" fill="#fffaf1"/>
+<text x="720" y="765" text-anchor="middle" class="b">설치 위치가 맞아도 import 이름은 공식 문서에서 확인하는 습관이 좋습니다</text>
+</svg>
