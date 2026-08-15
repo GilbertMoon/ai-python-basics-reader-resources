@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">함수 정의와 호출 흐름</title>
+<desc id="desc">def로 함수를 정의한 뒤 함수 이름과 괄호로 호출하면 함수 본문이 실행되는 흐름을 설명하는 Chapter 14 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">함수는 먼저 정의하고, 필요할 때 이름으로 호출합니다</text>
+<text x="70" y="135" class="s">정의만 하면 실행되지 않고, 호출해야 함수 본문이 실행됩니다</text>
+<rect x="80" y="205" width="370" height="175" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="125" cy="245" r="24" fill="#2f6ecb"/><text x="125" y="252" text-anchor="middle" class="n">1</text>
+<text x="165" y="252" class="h">함수 정의</text>
+<text x="115" y="315" class="code">def greet():</text>
+<text x="145" y="352" class="code">print("안녕하세요")</text>
+<line x1="450" y1="292" x2="555" y2="292" stroke="#4775d1" stroke-width="5"/><polygon points="555,292 535,279 535,305" fill="#4775d1"/>
+<rect x="555" y="205" width="330" height="175" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="600" cy="245" r="24" fill="#2fa66d"/><text x="600" y="252" text-anchor="middle" class="n">2</text>
+<text x="640" y="252" class="h">함수 호출</text>
+<text x="595" y="330" class="code">greet()</text>
+<line x1="885" y1="292" x2="990" y2="292" stroke="#2fa66d" stroke-width="5"/><polygon points="990,292 970,279 970,305" fill="#2fa66d"/>
+<rect x="990" y="205" width="370" height="175" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="1035" cy="245" r="24" fill="#d8a432"/><text x="1035" y="252" text-anchor="middle" class="n">3</text>
+<text x="1075" y="252" class="h">본문 실행</text>
+<text x="1030" y="330" class="code">안녕하세요</text>
+<rect x="90" y="475" width="1260" height="170" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="525" class="h">정의와 호출을 구분해서 읽기</text>
+<text x="130" y="580" class="code">def greet(): ...</text><text x="460" y="580" class="b">→ 할 일을 이름으로 묶어 둠</text>
+<text x="130" y="625" class="code">greet()</text><text x="460" y="625" class="b">→ 묶어 둔 코드를 실제로 실행</text>
+<rect x="90" y="705" width="1260" height="60" rx="18" fill="#eef5ff"/>
+<text x="720" y="743" text-anchor="middle" class="b">함수 정의 ≠ 함수 실행 · 괄호를 붙여 호출해야 실행됩니다</text>
+</svg>
