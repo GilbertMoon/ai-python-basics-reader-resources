@@ -2,7 +2,7 @@
 <title id="title">클래스와 객체 설계도 관계</title>
 <desc id="desc">클래스가 데이터와 기능을 정의하는 설계도이고 객체는 클래스로부터 만든 서로 다른 실제 값임을 설명하는 Chapter 18 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:20px;font-weight:700}.small{font-size:17px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:19px;font-weight:600}.code{font-family:Consolas,monospace;font-size:20px;font-weight:700}.small{font-size:16px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
 <text x="70" y="88" class="t">클래스는 설계도이고, 객체는 그 설계도로 만든 실제 값입니다</text>
 <text x="70" y="132" class="s">같은 클래스로 여러 객체를 만들 수 있지만 각 객체의 속성값은 서로 독립적입니다</text>
 <rect x="90" y="190" width="520" height="400" rx="28" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
@@ -25,8 +25,8 @@
 <text x="1120" y="405" class="code">name = "지영"</text>
 <text x="1120" y="450" class="code">score = 92</text>
 <text x="825" y="545" class="small">같은 설계도 · 서로 다른 실제 객체 · 각자 다른 속성값</text>
-<rect x="90" y="650" width="1260" height="95" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
-<text x="130" y="690" class="h">연결해서 기억하기</text>
-<text x="430" y="690" class="b">함수는 기능을 묶고 · 클래스는 관련 데이터와 기능을 함께 묶고 · 객체는 그 구조를 실제 값으로 사용합니다</text>
-<text x="720" y="730" text-anchor="middle" class="small">Student()를 호출할 때마다 새로운 객체가 만들어집니다</text>
+<rect x="90" y="625" width="1260" height="125" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="668" class="h">연결해서 기억하기</text>
+<text x="130" y="708" class="b">함수 → 기능 묶기 · 클래스 → 관련 데이터와 기능 구조화</text>
+<text x="130" y="738" class="small">객체 → 클래스로 만든 실제 값 · Student()를 호출할 때마다 새로운 객체가 만들어집니다</text>
 </svg>
