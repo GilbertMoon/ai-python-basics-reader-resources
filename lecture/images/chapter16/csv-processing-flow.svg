@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">CSV 읽기와 숫자 집계 흐름</title>
+<desc id="desc">CSV 텍스트를 DictReader로 딕셔너리 행으로 읽고 문자열 숫자를 int로 변환해 매출 합계를 계산하는 Chapter 16 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:20px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">CSV는 읽고, 열 이름으로 꺼내고, 숫자로 바꾼 뒤 계산합니다</text>
+<text x="70" y="135" class="s">DictReader를 사용하면 Chapter 13의 딕셔너리처럼 열 이름으로 한 행의 값을 읽을 수 있습니다</text>
+<rect x="55" y="205" width="290" height="230" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="95" cy="245" r="22" fill="#2f6ecb"/><text x="95" y="252" text-anchor="middle" class="n">1</text><text x="135" y="252" class="h">CSV 원본</text>
+<text x="90" y="315" class="code">product,price,quantity</text>
+<text x="90" y="355" class="code">키보드,45000,2</text>
+<text x="90" y="395" class="small">CSV도 결국 텍스트 파일</text>
+<line x1="345" y1="320" x2="405" y2="320" stroke="#4775d1" stroke-width="5"/><polygon points="405,320 385,307 385,333" fill="#4775d1"/>
+<rect x="405" y="205" width="300" height="230" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="445" cy="245" r="22" fill="#2fa66d"/><text x="445" y="252" text-anchor="middle" class="n">2</text><text x="485" y="252" class="h">DictReader</text>
+<text x="440" y="315" class="code">row["product"]</text>
+<text x="440" y="355" class="code">row["price"]</text>
+<text x="440" y="395" class="small">열 이름을 딕셔너리 키처럼 사용</text>
+<line x1="705" y1="320" x2="765" y2="320" stroke="#2fa66d" stroke-width="5"/><polygon points="765,320 745,307 745,333" fill="#2fa66d"/>
+<rect x="765" y="205" width="285" height="230" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="805" cy="245" r="22" fill="#d8a432"/><text x="805" y="252" text-anchor="middle" class="n">3</text><text x="845" y="252" class="h">숫자 변환</text>
+<text x="800" y="320" class="code">price = int(row["price"])</text>
+<text x="800" y="360" class="code">qty = int(row["quantity"])</text>
+<text x="800" y="405" class="small">CSV 숫자는 읽을 때 문자열</text>
+<line x1="1050" y1="320" x2="1110" y2="320" stroke="#d8a432" stroke-width="5"/><polygon points="1110,320 1090,307 1090,333" fill="#d8a432"/>
+<rect x="1110" y="205" width="275" height="230" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="1150" cy="245" r="22" fill="#d85c5c"/><text x="1150" y="252" text-anchor="middle" class="n">4</text><text x="1190" y="252" class="h">집계</text>
+<text x="1145" y="320" class="code">sale = price * qty</text>
+<text x="1145" y="360" class="code">total += sale</text>
+<text x="1145" y="405" class="small">반복해서 합계 누적</text>
+<rect x="90" y="505" width="1260" height="160" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="555" class="h">csv.reader와 DictReader 비교</text>
+<text x="130" y="610" class="code">csv.reader</text><text x="340" y="610" class="b">→ row[0], row[1]처럼 위치로 접근</text>
+<text x="750" y="610" class="code">csv.DictReader</text><text x="1030" y="610" class="b">→ row["price"]처럼 열 이름으로 접근</text>
+<rect x="90" y="715" width="1260" height="60" rx="18" fill="#eef5ff"/>
+<text x="720" y="753" text-anchor="middle" class="b">CSV 분석의 기본 흐름: 읽기 → 열 선택 → 형 변환 → 계산 → 누적</text>
+</svg>
