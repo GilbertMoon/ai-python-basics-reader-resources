@@ -8,7 +8,7 @@
 <rect x="70" y="190" width="395" height="365" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
 <circle cx="115" cy="232" r="23" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">메서드의 self 누락</text>
 <text x="105" y="310" class="code">def show_result():</text>
-<text x="105" y="350" class="code">    print(self.name)</text>
+<text x="105" y="350" class="code">    print("결과 출력")</text>
 <text x="105" y="410" class="small">객체 메서드의 첫 매개변수에</text>
 <text x="105" y="445" class="small">self가 있는지 먼저 확인합니다</text>
 <text x="105" y="500" class="code">def show_result(self):</text>
@@ -26,7 +26,8 @@
 <text x="1005" y="420" class="small">__init__에서 만든 속성 이름과</text>
 <text x="1005" y="455" class="small">사용한 이름이 일치하는지 확인</text>
 <text x="1005" y="505" class="code">self.score ↔ student.score</text>
-<rect x="90" y="615" width="1260" height="130" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
-<text x="130" y="657" class="h">DEBUG CHECKLIST</text>
-<text x="130" y="700" class="b">1. 클래스 이름 · 2. __init__ 매개변수/인수 · 3. 메서드 첫 self · 4. self.name과 사용한 속성 이름 · 5. TypeError/AttributeError 구분</text>
+<rect x="90" y="605" width="1260" height="150" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="647" class="h">DEBUG CHECKLIST</text>
+<text x="130" y="690" class="small">1. 클래스 이름 · 2. __init__ 매개변수와 호출 인수 · 3. 메서드 첫 매개변수 self</text>
+<text x="130" y="720" class="small">4. self.name과 실제 사용한 속성 이름 · 5. TypeError인지 AttributeError인지 구분</text>
 </svg>
