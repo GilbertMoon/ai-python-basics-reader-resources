@@ -2,14 +2,28 @@
 <title id="title">AI와 함께 배우는 학습 사이클</title><desc id="desc">질문하고 코드를 받고 직접 실행하고 결과를 확인한 뒤 AI에게 다시 묻고 내 코드로 수정하는 여섯 단계 학습 사이클</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
 <style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#13275f}.title{font-size:58px;font-weight:800}.sub{font-size:28px;font-weight:800;fill:#2364d8}.step{font-size:28px;font-weight:800}.num{font-size:28px;font-weight:800;fill:#fff}.hint{font-size:22px;font-weight:700;fill:#0d8f89}.foot{font-size:32px;font-weight:800}</style>
-<text x="720" y="85" text-anchor="middle" class="title">AI와 함께 배우는 학습 사이클</text><text x="720" y="132" text-anchor="middle" class="sub">Chapter 01 학습 방법</text>
+<text x="720" y="85" text-anchor="middle" class="title">AI와 함께 배우는 학습 사이클</text>
+<text x="720" y="132" text-anchor="middle" class="sub">Chapter 01 학습 방법</text>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#2364d8"/></marker></defs>
-<g transform="translate(130,185)"><rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">1</text><text x="165" y="82" text-anchor="middle" class="step">질문한다</text></g>
-<g transform="translate(555,185)"><rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">2</text><text x="165" y="68" text-anchor="middle" class="step">코드를 받는다</text><text x="165" y="108" text-anchor="middle" font-size="22px" font-weight="600" fill="#4b5f88">정답이 아니라 학습 재료</text></g>
-<g transform="translate(980,185)"><rect width="330" height="155" rx="24" fill="#f5fffd" stroke="#119c96" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#119c96"/><text x="30" y="10" text-anchor="middle" class="num">3</text><text x="165" y="82" text-anchor="middle" class="step">직접 실행한다</text></g>
-<g transform="translate(980,430)"><rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">4</text><text x="165" y="68" text-anchor="middle" class="step">결과를 확인한다</text><text x="165" y="108" text-anchor="middle" class="hint">예상과 실제 비교</text></g>
-<g transform="translate(555,430)"><rect width="330" height="155" rx="24" fill="#f5fffd" stroke="#119c96" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#119c96"/><text x="30" y="10" text-anchor="middle" class="num">5</text><text x="165" y="68" text-anchor="middle" class="step">AI에게 다시 묻는다</text><text x="165" y="108" text-anchor="middle" class="hint">설명 · 힌트 · 검토</text></g>
-<g transform="translate(130,430)"><rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">6</text><text x="165" y="68" text-anchor="middle" class="step">내 코드로 수정한다</text><text x="165" y="108" text-anchor="middle" class="hint">다시 실행해 검증</text></g>
+<g transform="translate(130,185)">
+<rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">1</text><text x="165" y="82" text-anchor="middle" class="step">질문한다</text>
+</g>
+<g transform="translate(555,185)">
+<rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">2</text><text x="165" y="68" text-anchor="middle" class="step">코드를 받는다</text><text x="165" y="108" text-anchor="middle" font-size="22px" font-weight="600" fill="#4b5f88">정답이 아니라 학습 재료</text>
+</g>
+<g transform="translate(980,185)">
+<rect width="330" height="155" rx="24" fill="#f5fffd" stroke="#119c96" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#119c96"/><text x="30" y="10" text-anchor="middle" class="num">3</text><text x="165" y="82" text-anchor="middle" class="step">직접 실행한다</text>
+</g>
+<g transform="translate(980,430)">
+<rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">4</text><text x="165" y="68" text-anchor="middle" class="step">결과를 확인한다</text><text x="165" y="108" text-anchor="middle" class="hint">예상과 실제 비교</text>
+</g>
+<g transform="translate(555,430)">
+<rect width="330" height="155" rx="24" fill="#f5fffd" stroke="#119c96" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#119c96"/><text x="30" y="10" text-anchor="middle" class="num">5</text><text x="165" y="68" text-anchor="middle" class="step">AI에게 다시 묻는다</text><text x="165" y="108" text-anchor="middle" class="hint">설명 · 힌트 · 검토</text>
+</g>
+<g transform="translate(130,430)">
+<rect width="330" height="155" rx="24" fill="#f8fbff" stroke="#3274e6" stroke-width="3"/><circle cx="30" cy="0" r="34" fill="#1768d9"/><text x="30" y="10" text-anchor="middle" class="num">6</text><text x="165" y="68" text-anchor="middle" class="step">내 코드로 수정한다</text><text x="165" y="108" text-anchor="middle" class="hint">다시 실행해 검증</text>
+</g>
 <path d="M460 262 H545" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/><path d="M885 262 H970" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/><path d="M1145 340 V418" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/><path d="M980 508 H895" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/><path d="M555 508 H470" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/><path d="M130 508 C70 508,70 262,120 262" stroke="#2364d8" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
-<rect x="135" y="640" width="1170" height="90" rx="22" fill="#f3f8ff" stroke="#76a6ff" stroke-width="2"/><text x="720" y="696" text-anchor="middle" class="foot">핵심: AI가 준 코드를 그대로 복사하지 말고 실행하고 바꿔 보자</text>
+<rect x="135" y="640" width="1170" height="90" rx="22" fill="#f3f8ff" stroke="#76a6ff" stroke-width="2"/>
+<text x="720" y="696" text-anchor="middle" class="foot">핵심: AI가 준 코드를 그대로 복사하지 말고 실행하고 바꿔 보자</text>
 </svg>
