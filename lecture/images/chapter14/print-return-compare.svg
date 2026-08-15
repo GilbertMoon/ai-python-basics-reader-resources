@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">print와 return 비교</title>
+<desc id="desc">print는 화면에 값을 보여 주고 return은 함수 밖으로 값을 전달하여 변수 저장과 추가 계산에 사용할 수 있다는 차이를 설명하는 Chapter 14 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">print()는 보여 주고, return은 값을 함수 밖으로 전달합니다</text>
+<text x="70" y="135" class="s">화면 출력과 함수 결과 전달은 서로 다른 역할입니다</text>
+<rect x="70" y="195" width="620" height="400" rx="28" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="110" y="225" width="120" height="40" rx="20" fill="#d8a432"/><text x="170" y="253" text-anchor="middle" class="tag">print()</text>
+<text x="110" y="325" class="code">def add(a, b):</text>
+<text x="140" y="365" class="code">print(a + b)</text>
+<text x="110" y="435" class="code">result = add(10, 20)</text>
+<text x="110" y="490" class="b">화면에는 30이 보이지만</text>
+<text x="110" y="530" class="b">result에는 계산 결과가 저장되지 않습니다.</text>
+<rect x="750" y="195" width="620" height="400" rx="28" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="790" y="225" width="120" height="40" rx="20" fill="#2fa66d"/><text x="850" y="253" text-anchor="middle" class="tag">return</text>
+<text x="790" y="325" class="code">def add(a, b):</text>
+<text x="820" y="365" class="code">return a + b</text>
+<text x="790" y="435" class="code">result = add(10, 20)</text>
+<text x="790" y="490" class="b">result에 30이 저장되고</text>
+<text x="790" y="530" class="b">다른 계산에서 다시 사용할 수 있습니다.</text>
+<rect x="90" y="650" width="1260" height="95" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="692" class="h">선택 기준</text>
+<text x="330" y="692" class="b">사용자에게 보여 주기 → print() · 함수 결과를 저장·계산에 재사용하기 → return</text>
+<text x="130" y="730" class="small">함수 안에서 둘을 함께 사용할 수도 있지만 역할이 같다고 생각하면 안 됩니다.</text>
+</svg>
