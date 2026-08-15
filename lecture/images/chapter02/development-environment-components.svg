@@ -4,9 +4,36 @@
 <style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#13275f}.title{font-size:58px;font-weight:850}.sub{font-size:28px;font-weight:700;fill:#4a5878}.head{font-size:34px;font-weight:850}.body{font-size:23px;font-weight:620}.small{font-size:20px;font-weight:560;fill:#4a5878}.num{font-size:27px;font-weight:850;fill:#fff}.flow{font-size:28px;font-weight:800}.foot{font-size:35px;font-weight:850}</style>
 <text x="720" y="86" text-anchor="middle" class="title">파이썬 개발 환경은 세 가지가 함께 동작합니다</text>
 <text x="720" y="132" text-anchor="middle" class="sub">VS Code를 설치했다고 Python이 설치된 것은 아닙니다</text>
-<g transform="translate(70 200)"><rect x="0" y="0" width="390" height="360" rx="28" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/><circle cx="70" cy="62" r="34" fill="#2864dc"/><text x="70" y="72" text-anchor="middle" class="num">01</text><rect x="125" y="35" width="120" height="90" rx="20" fill="#2864dc" opacity=".12"/><text x="185" y="92" text-anchor="middle" class="head" fill="#2864dc">Py</text><text x="195" y="170" text-anchor="middle" class="head">Python 실행기</text><text x="195" y="218" text-anchor="middle" class="body">.py 코드를 실제로 읽고 실행</text><text x="195" y="258" text-anchor="middle" class="small">인터프리터(Interpreter)</text><text x="195" y="310" text-anchor="middle" class="body">실행의 주체</text></g>
-<g transform="translate(525 200)"><rect x="0" y="0" width="390" height="360" rx="28" fill="#f5fcfc" stroke="#0f9f98" stroke-width="3"/><circle cx="70" cy="62" r="34" fill="#0f9f98"/><text x="70" y="72" text-anchor="middle" class="num">02</text><rect x="120" y="35" width="130" height="90" rx="20" fill="#0f9f98" opacity=".12"/><text x="185" y="91" text-anchor="middle" class="head">&lt;/&gt;</text><text x="195" y="170" text-anchor="middle" class="head">VS Code</text><text x="195" y="218" text-anchor="middle" class="body">코드 작성 · 파일 · 폴더 관리</text><text x="195" y="258" text-anchor="middle" class="small">코드 편집기(Editor)</text><text x="195" y="310" text-anchor="middle" class="body">작업 공간</text></g>
-<g transform="translate(980 200)"><rect x="0" y="0" width="390" height="360" rx="28" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/><circle cx="70" cy="62" r="34" fill="#2864dc"/><text x="70" y="72" text-anchor="middle" class="num">03</text><rect x="120" y="35" width="130" height="90" rx="20" fill="#2864dc" opacity=".12"/><text x="185" y="92" text-anchor="middle" class="head">EXT</text><text x="195" y="170" text-anchor="middle" class="head">Python 확장</text><text x="195" y="218" text-anchor="middle" class="body">VS Code와 Python을 연결</text><text x="195" y="258" text-anchor="middle" class="small">실행 · 자동완성 · 디버깅 지원</text><text x="195" y="310" text-anchor="middle" class="body">연결 도구</text></g>
-<line x1="460" y1="380" x2="525" y2="380" stroke="#2864dc" stroke-width="5"/><polygon points="525,380 505,368 505,392" fill="#2864dc"/><line x1="915" y1="380" x2="980" y2="380" stroke="#0f9f98" stroke-width="5"/><polygon points="980,380 960,368 960,392" fill="#0f9f98"/>
-<rect x="150" y="625" width="1140" height="120" rx="30" fill="#f7faff" stroke="#a8c1f6" stroke-width="2"/><text x="720" y="674" text-anchor="middle" class="flow">코드 작성 → VS Code + Python 확장 → Python 실행기 → 실행 결과</text><text x="720" y="718" text-anchor="middle" class="foot">핵심: 편집기와 실행기의 역할을 구분하면 환경 오류가 훨씬 쉬워집니다.</text>
+<g transform="translate(70 200)">
+ <rect x="0" y="0" width="390" height="360" rx="28" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/>
+ <circle cx="70" cy="62" r="34" fill="#2864dc"/><text x="70" y="72" text-anchor="middle" class="num">01</text>
+ <rect x="125" y="35" width="120" height="90" rx="20" fill="#2864dc" opacity=".12"/><text x="185" y="92" text-anchor="middle" class="head" fill="#2864dc">Py</text>
+ <text x="195" y="170" text-anchor="middle" class="head">Python 실행기</text>
+ <text x="195" y="218" text-anchor="middle" class="body">.py 코드를 실제로 읽고 실행</text>
+ <text x="195" y="258" text-anchor="middle" class="small">인터프리터(Interpreter)</text>
+ <text x="195" y="310" text-anchor="middle" class="body">실행의 주체</text>
+</g>
+<g transform="translate(525 200)">
+ <rect x="0" y="0" width="390" height="360" rx="28" fill="#f5fcfc" stroke="#0f9f98" stroke-width="3"/>
+ <circle cx="70" cy="62" r="34" fill="#0f9f98"/><text x="70" y="72" text-anchor="middle" class="num">02</text>
+ <rect x="120" y="35" width="130" height="90" rx="20" fill="#0f9f98" opacity=".12"/><text x="185" y="91" text-anchor="middle" class="head">&lt;/&gt;</text>
+ <text x="195" y="170" text-anchor="middle" class="head">VS Code</text>
+ <text x="195" y="218" text-anchor="middle" class="body">코드 작성 · 파일 · 폴더 관리</text>
+ <text x="195" y="258" text-anchor="middle" class="small">코드 편집기(Editor)</text>
+ <text x="195" y="310" text-anchor="middle" class="body">작업 공간</text>
+</g>
+<g transform="translate(980 200)">
+ <rect x="0" y="0" width="390" height="360" rx="28" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/>
+ <circle cx="70" cy="62" r="34" fill="#2864dc"/><text x="70" y="72" text-anchor="middle" class="num">03</text>
+ <rect x="120" y="35" width="130" height="90" rx="20" fill="#2864dc" opacity=".12"/><text x="185" y="92" text-anchor="middle" class="head">EXT</text>
+ <text x="195" y="170" text-anchor="middle" class="head">Python 확장</text>
+ <text x="195" y="218" text-anchor="middle" class="body">VS Code와 Python을 연결</text>
+ <text x="195" y="258" text-anchor="middle" class="small">실행 · 자동완성 · 디버깅 지원</text>
+ <text x="195" y="310" text-anchor="middle" class="body">연결 도구</text>
+</g>
+<line x1="460" y1="380" x2="525" y2="380" stroke="#2864dc" stroke-width="5"/><polygon points="525,380 505,368 505,392" fill="#2864dc"/>
+<line x1="915" y1="380" x2="980" y2="380" stroke="#0f9f98" stroke-width="5"/><polygon points="980,380 960,368 960,392" fill="#0f9f98"/>
+<rect x="150" y="625" width="1140" height="120" rx="30" fill="#f7faff" stroke="#a8c1f6" stroke-width="2"/>
+<text x="720" y="674" text-anchor="middle" class="flow">코드 작성 → VS Code + Python 확장 → Python 실행기 → 실행 결과</text>
+<text x="720" y="718" text-anchor="middle" class="foot">핵심: 편집기와 실행기의 역할을 구분하면 환경 오류가 훨씬 쉬워집니다.</text>
 </svg>
