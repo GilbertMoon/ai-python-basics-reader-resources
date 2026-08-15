@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">질문별 groupby 분석 흐름</title>
+<desc id="desc">카테고리 채널 고객 유형 상품별로 sales_amount를 그룹화하고 합계와 정렬로 질문에 답하는 Chapter 24 분석 흐름도</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#14285f}.t{font-size:37px;font-weight:800}.s{font-size:22px;font-weight:700;fill:#52617e}.h{font-size:21px;font-weight:800}.b{font-size:16px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:13px;font-weight:700}</style>
+<text x="70" y="88" class="t">질문이 달라도 분석의 기본 구조는 같습니다</text>
+<text x="70" y="130" class="s">groupby 기준 열만 바꾸면 여러 관점의 매출을 같은 방식으로 비교할 수 있습니다</text>
+<rect x="60" y="185" width="300" height="245" rx="24" fill="#eef5ff" stroke="#7aa8f5" stroke-width="3"/>
+<rect x="95" y="215" width="150" height="38" rx="19" fill="#2f6ecb"/><text x="170" y="242" text-anchor="middle" class="tag">카테고리 분석</text>
+<text x="95" y="305" class="code">groupby("category")</text>
+<text x="95" y="340" class="code">["sales_amount"].sum()</text>
+<text x="95" y="375" class="code">.sort_values(ascending=False)</text>
+<text x="95" y="415" class="small">결과: 오디오 845,000원</text>
+<rect x="390" y="185" width="300" height="245" rx="24" fill="#fff8ef" stroke="#f0c262" stroke-width="3"/>
+<rect x="425" y="215" width="150" height="38" rx="19" fill="#d89f2d"/><text x="500" y="242" text-anchor="middle" class="tag">채널 분석</text>
+<text x="425" y="305" class="code">groupby("channel")</text>
+<text x="425" y="340" class="code">["sales_amount"].sum()</text>
+<text x="425" y="375" class="code">.sort_values(ascending=False)</text>
+<text x="425" y="415" class="small">결과: 온라인 1,674,000원</text>
+<rect x="720" y="185" width="300" height="245" rx="24" fill="#eaf9f2" stroke="#42b883" stroke-width="3"/>
+<rect x="755" y="215" width="160" height="38" rx="19" fill="#2ea66b"/><text x="835" y="242" text-anchor="middle" class="tag">고객 유형 분석</text>
+<text x="755" y="305" class="code">groupby("customer_type")</text>
+<text x="755" y="340" class="code">["sales_amount"].sum()</text>
+<text x="755" y="375" class="code">.sort_values(ascending=False)</text>
+<text x="755" y="415" class="small">결과: 기존 1,351,000원</text>
+<rect x="1050" y="185" width="330" height="245" rx="24" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1085" y="215" width="145" height="38" rx="19" fill="#7d63be"/><text x="1157" y="242" text-anchor="middle" class="tag">상품 분석</text>
+<text x="1085" y="305" class="code">groupby("product")</text>
+<text x="1085" y="340" class="code">["sales_amount"].sum()</text>
+<text x="1085" y="375" class="code">.sort_values(ascending=False)</text>
+<text x="1085" y="415" class="small">결과: 모니터암 425,000원</text>
+<rect x="100" y="500" width="1240" height="90" rx="22" fill="#eef5ff" stroke="#bfd4f7" stroke-width="2"/>
+<text x="720" y="545" text-anchor="middle" class="h">공통 패턴</text>
+<text x="720" y="578" text-anchor="middle" class="code">df.groupby(기준열)["sales_amount"].sum().sort_values(ascending=False)</text>
+<rect x="80" y="625" width="1280" height="110" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="120" y="670" class="b">기억할 점</text><text x="260" y="670" class="small">질문이 바뀌면 groupby 기준 열이 바뀌지만 집계 대상은 계속 sales_amount입니다</text>
+<text x="120" y="710" class="b">표현 주의</text><text x="260" y="710" class="small">“많이 팔렸다”와 “매출이 크다”는 다릅니다. 이번 비교 기준은 매출 금액입니다</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">질문이 달라도 구조는 비슷합니다. 어떤 열을 기준으로 묶는지가 핵심 차이입니다</text>
+</svg>
