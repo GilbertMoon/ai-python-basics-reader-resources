@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">검증 해석 AI 리뷰 흐름</title>
+<desc id="desc">전체 매출과 집계 합계를 비교해 분석 결과를 검증하고 숫자를 근거 있는 문장으로 바꾼 뒤 AI에게 해석 범위와 근거를 검토받는 Chapter 24 최종 흐름도</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#14285f}.t{font-size:37px;font-weight:800}.s{font-size:22px;font-weight:700;fill:#52617e}.h{font-size:22px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:14px;font-weight:700}</style>
+<text x="70" y="88" class="t">좋은 분석은 계산이 끝난 뒤에도 검증과 해석 점검이 계속됩니다</text>
+<text x="70" y="130" class="s">합계를 다시 맞춰 보고 데이터가 말하지 않는 내용을 과장하지 않는지 확인합니다</text>
+<rect x="60" y="190" width="300" height="260" rx="25" fill="#eef5ff" stroke="#7aa8f5" stroke-width="3"/>
+<rect x="95" y="220" width="140" height="38" rx="19" fill="#2f6ecb"/><text x="165" y="247" text-anchor="middle" class="tag">1. 합계 검증</text>
+<text x="95" y="310" class="code">total_sales =</text>
+<text x="95" y="345" class="code">df["sales_amount"].sum()</text>
+<text x="95" y="385" class="small">전체 매출 = 2,377,000원</text>
+<text x="95" y="420" class="small">각 groupby 결과의 합과 비교</text>
+<line x1="360" y1="325" x2="405" y2="325" stroke="#4477d2" stroke-width="5"/><polygon points="405,325 385,312 385,338" fill="#4477d2"/>
+<rect x="405" y="190" width="300" height="260" rx="25" fill="#fff8ef" stroke="#f0c262" stroke-width="3"/>
+<rect x="440" y="220" width="140" height="38" rx="19" fill="#d89f2d"/><text x="510" y="247" text-anchor="middle" class="tag">2. 문장 작성</text>
+<text x="440" y="310" class="small">무엇이</text>
+<text x="440" y="345" class="small">얼마이며</text>
+<text x="440" y="380" class="small">무엇보다 큰지/작은지</text>
+<text x="440" y="420" class="small">예: 오디오 매출 845,000원으로 가장 높음</text>
+<line x1="705" y1="325" x2="750" y2="325" stroke="#d89f2d" stroke-width="5"/><polygon points="750,325 730,312 730,338" fill="#d89f2d"/>
+<rect x="750" y="190" width="300" height="260" rx="25" fill="#eaf9f2" stroke="#42b883" stroke-width="3"/>
+<rect x="785" y="220" width="170" height="38" rx="19" fill="#2ea66b"/><text x="870" y="247" text-anchor="middle" class="tag">3. 해석 경계</text>
+<text x="785" y="310" class="b">데이터로 확인</text>
+<text x="785" y="345" class="small">온라인 매출이 더 크다</text>
+<text x="785" y="385" class="b">추가 근거 필요</text>
+<text x="785" y="420" class="small">온라인 채널이 더 효율적이다</text>
+<line x1="1050" y1="325" x2="1095" y2="325" stroke="#2ea66b" stroke-width="5"/><polygon points="1095,325 1075,312 1075,338" fill="#2ea66b"/>
+<rect x="1095" y="190" width="285" height="260" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1130" y="220" width="140" height="38" rx="19" fill="#7d63be"/><text x="1200" y="247" text-anchor="middle" class="tag">4. AI 리뷰</text>
+<text x="1130" y="305" class="small">질문과 코드가 맞는가?</text>
+<text x="1130" y="340" class="small">검증이 빠진 곳은 없는가?</text>
+<text x="1130" y="375" class="small">과장된 해석은 없는가?</text>
+<text x="1130" y="410" class="small">필요한 부분만 수정할 것</text>
+<rect x="90" y="520" width="1260" height="190" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="565" class="h">AI는 답을 대신 쓰는 도구가 아니라 분석 근거를 점검하는 리뷰어입니다</text>
+<text x="130" y="615" class="b">AI에 제공</text><text x="275" y="615" class="small">분석 질문 · 사용한 코드 · 실제 출력 · 내가 쓴 해석 문장</text>
+<text x="130" y="660" class="b">사람이 확인</text><text x="275" y="660" class="small">숫자와 코드가 맞는지 · 데이터보다 더 큰 주장으로 넘어가지 않았는지</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">질문 → 계산 → 검증 → 문장 → AI 리뷰 → 필요한 부분만 수정 → 다시 검증</text>
+</svg>
