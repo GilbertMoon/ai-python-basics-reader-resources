@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">매개변수와 반환값 흐름</title>
+<desc id="desc">함수 호출에서 인수를 전달하면 매개변수가 값을 받고 함수 내부 계산 후 return으로 결과를 함수 밖으로 전달하는 Chapter 14 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">인수는 함수에 들어가고, return 값은 함수 밖으로 나옵니다</text>
+<text x="70" y="135" class="s">호출할 때 전달한 실제 값은 매개변수에 연결되고 계산 결과는 반환할 수 있습니다</text>
+<rect x="70" y="205" width="350" height="180" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="105" y="230" width="100" height="38" rx="19" fill="#2f6ecb"/><text x="155" y="257" text-anchor="middle" class="tag">인수</text>
+<text x="105" y="320" class="code">add(10, 20)</text>
+<text x="105" y="360" class="small">호출할 때 전달하는 실제 값</text>
+<line x1="420" y1="295" x2="530" y2="295" stroke="#4775d1" stroke-width="5"/><polygon points="530,295 510,282 510,308" fill="#4775d1"/>
+<rect x="530" y="205" width="380" height="180" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="565" y="230" width="120" height="38" rx="19" fill="#2fa66d"/><text x="625" y="257" text-anchor="middle" class="tag">매개변수</text>
+<text x="565" y="315" class="code">def add(a, b):</text>
+<text x="595" y="355" class="code">return a + b</text>
+<line x1="910" y1="295" x2="1020" y2="295" stroke="#2fa66d" stroke-width="5"/><polygon points="1020,295 1000,282 1000,308" fill="#2fa66d"/>
+<rect x="1020" y="205" width="350" height="180" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="1055" y="230" width="100" height="38" rx="19" fill="#d8a432"/><text x="1105" y="257" text-anchor="middle" class="tag">반환값</text>
+<text x="1055" y="320" class="code">30</text>
+<text x="1055" y="360" class="small">함수 밖에서 다시 사용 가능</text>
+<rect x="90" y="475" width="1260" height="180" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="525" class="h">호출 결과를 변수에 저장할 수 있습니다</text>
+<text x="130" y="585" class="code">total = add(10, 20)</text>
+<text x="610" y="585" class="b">→ 함수가 30을 반환</text>
+<text x="130" y="630" class="code">print(total)</text>
+<text x="610" y="630" class="b">→ 저장된 30을 출력</text>
+<rect x="90" y="710" width="1260" height="60" rx="18" fill="#eef5ff"/>
+<text x="720" y="748" text-anchor="middle" class="b">매개변수 = 받을 자리 · 인수 = 실제 전달 값 · return = 함수 밖으로 전달할 결과</text>
+</svg>
