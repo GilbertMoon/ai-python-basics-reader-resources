@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">반복문 오류 점검 순서</title><desc id="desc">range 끝 값, 들여쓰기, 누적 변수 초기화 위치, while 상태 변화 여부를 점검하는 Chapter 10 디버깅 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:27px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:22px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">반복문 오류는 네 가지부터 확인합니다</text>
+<text x="70" y="135" class="s">반복 범위와 변수의 변화를 한 단계씩 추적하면 원인을 찾기 쉽습니다</text>
+<rect x="70" y="190" width="305" height="275" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="230" r="25" fill="#d85c5c"/><text x="115" y="238" text-anchor="middle" class="n">1</text>
+<text x="155" y="238" class="h">끝 값 제외</text>
+<text x="100" y="305" class="code">range(1, 5)</text>
+<text x="100" y="345" class="b">→ 1, 2, 3, 4</text>
+<text x="100" y="400" class="small">원하는 마지막 값이 빠졌는지</text><text x="100" y="430" class="small">먼저 확인합니다.</text>
+<rect x="400" y="190" width="305" height="275" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="445" cy="230" r="25" fill="#d8a432"/><text x="445" y="238" text-anchor="middle" class="n">2</text>
+<text x="485" y="238" class="h">들여쓰기</text>
+<text x="430" y="305" class="code">for i in range(3):</text>
+<text x="450" y="342" class="code">print(i)</text>
+<text x="430" y="400" class="small">반복할 코드와 반복 뒤 코드의</text><text x="430" y="430" class="small">깊이를 구분합니다.</text>
+<rect x="730" y="190" width="305" height="275" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="775" cy="230" r="25" fill="#2f6ecb"/><text x="775" y="238" text-anchor="middle" class="n">3</text>
+<text x="815" y="238" class="h">초기화 위치</text>
+<text x="760" y="305" class="code">total = 0</text>
+<text x="760" y="342" class="code">for ...:</text>
+<text x="780" y="379" class="code">total += i</text>
+<text x="760" y="425" class="small">누적 변수는 반복문 밖에서 준비</text>
+<rect x="1060" y="190" width="305" height="275" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1105" cy="230" r="25" fill="#2fa66d"/><text x="1105" y="238" text-anchor="middle" class="n">4</text>
+<text x="1145" y="238" class="h">상태 변화</text>
+<text x="1090" y="305" class="code">while count &lt;= 5:</text>
+<text x="1110" y="342" class="code">count += 1</text>
+<text x="1090" y="400" class="small">조건에 사용한 값이 실제로</text><text x="1090" y="430" class="small">바뀌는지 확인합니다.</text>
+<rect x="70" y="520" width="1295" height="180" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="565" class="h">DEBUG CHECKLIST</text>
+<circle cx="125" cy="615" r="20" fill="#2f6ecb"/><text x="125" y="622" text-anchor="middle" class="n">1</text><text x="165" y="622" class="b">range()가 실제로 만드는 값을 적어 본다.</text>
+<circle cx="650" cy="615" r="20" fill="#2f6ecb"/><text x="650" y="622" text-anchor="middle" class="n">2</text><text x="690" y="622" class="b">반복 변수의 값을 한 번씩 추적한다.</text>
+<circle cx="125" cy="665" r="20" fill="#2f6ecb"/><text x="125" y="672" text-anchor="middle" class="n">3</text><text x="165" y="672" class="b">누적 변수의 시작 위치를 확인한다.</text>
+<circle cx="650" cy="665" r="20" fill="#2f6ecb"/><text x="650" y="672" text-anchor="middle" class="n">4</text><text x="690" y="672" class="b">while 조건이 언젠가 False가 되는지 확인한다.</text>
+<rect x="70" y="735" width="1295" height="45" rx="15" fill="#eef5ff"/>
+<text x="720" y="766" text-anchor="middle" class="b">한 번에 한 곳만 수정하고 다시 실행하면 원인을 더 정확히 찾을 수 있습니다.</text>
+</svg>
