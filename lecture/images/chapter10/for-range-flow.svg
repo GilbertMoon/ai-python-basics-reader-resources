@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">for와 range 반복 실행 흐름</title><desc id="desc">range가 값을 만들고 for가 값을 하나씩 꺼내 반복 변수를 바꾸며 들여쓰기된 코드를 실행하는 Chapter 10 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:27px;font-weight:700}.n{font-size:23px;font-weight:800;fill:#fff}.small{font-size:20px;font-weight:600}</style>
+<text x="70" y="90" class="t">for문은 값을 하나씩 꺼내 같은 코드를 반복합니다</text>
+<text x="70" y="135" class="s">range(5) → 0, 1, 2, 3, 4를 차례로 제공</text>
+<rect x="70" y="205" width="360" height="130" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="250" y="250" text-anchor="middle" class="h">반복할 값 만들기</text>
+<text x="250" y="300" text-anchor="middle" class="code">range(5)</text>
+<line x1="430" y1="270" x2="540" y2="270" stroke="#4775d1" stroke-width="5"/>
+<polygon points="540,270 520,257 520,283" fill="#4775d1"/>
+<rect x="540" y="205" width="360" height="130" rx="24" fill="#f8fbff" stroke="#4775d1" stroke-width="3"/>
+<text x="720" y="250" text-anchor="middle" class="h">값 하나 꺼내기</text>
+<text x="720" y="300" text-anchor="middle" class="code">i = 0 → 1 → 2 → 3 → 4</text>
+<line x1="900" y1="270" x2="1010" y2="270" stroke="#2fa66d" stroke-width="5"/>
+<polygon points="1010,270 990,257 990,283" fill="#2fa66d"/>
+<rect x="1010" y="205" width="360" height="130" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="1190" y="250" text-anchor="middle" class="h">코드 실행</text>
+<text x="1190" y="300" text-anchor="middle" class="code">print(i)</text>
+<path d="M1190 335 C1190 430 720 430 720 345" fill="none" stroke="#4775d1" stroke-width="5" stroke-dasharray="12 10"/>
+<polygon points="720,345 707,365 733,365" fill="#4775d1"/>
+<text x="955" y="420" text-anchor="middle" class="b">다음 값이 있으면 다시 반복</text>
+<rect x="110" y="485" width="1220" height="105" rx="24" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="150" y="530" class="code">for i in range(5):</text>
+<text x="190" y="570" class="code">print(i)</text>
+<text x="850" y="545" class="b">출력 결과</text>
+<text x="1010" y="545" class="code">0  1  2  3  4</text>
+<rect x="80" y="650" width="1280" height="105" rx="24" fill="#eef5ff"/>
+<circle cx="135" cy="702" r="27" fill="#2f6ecb"/><text x="135" y="710" text-anchor="middle" class="n">1</text><text x="180" y="710" class="b">range()가 반복할 값을 준비합니다.</text>
+<circle cx="660" cy="702" r="27" fill="#2f6ecb"/><text x="660" y="710" text-anchor="middle" class="n">2</text><text x="705" y="710" class="b">for가 값을 하나씩 반복 변수에 넣습니다.</text>
+<circle cx="1120" cy="702" r="27" fill="#2f6ecb"/><text x="1120" y="710" text-anchor="middle" class="n">3</text><text x="1165" y="710" class="b">들여쓴 코드 실행</text>
+</svg>
