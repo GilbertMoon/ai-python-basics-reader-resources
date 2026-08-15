@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">튜플과 집합 오류 디버깅 체크리스트</title>
+<desc id="desc">튜플 요소 수정 TypeError, 튜플 언패킹 ValueError, 집합 remove KeyError와 빈 집합 생성 규칙을 점검하는 Chapter 12 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:27px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:22px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">튜플과 집합 오류는 자료구조의 특징부터 확인합니다</text>
+<text x="70" y="135" class="s">오류 메시지를 외우기보다 “이 자료구조에서 가능한 작업인가?”를 먼저 묻습니다</text>
+<rect x="70" y="190" width="305" height="350" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="232" r="24" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text>
+<text x="155" y="240" class="h">튜플 수정</text>
+<text x="100" y="310" class="code">t = (10, 20)</text><text x="100" y="350" class="code">t[0] = 99</text>
+<text x="100" y="410" class="b">→ TypeError</text>
+<text x="100" y="460" class="small">튜플 요소는 직접 바꿀 수</text><text x="100" y="490" class="small">있는지 먼저 확인합니다.</text>
+<rect x="400" y="190" width="305" height="350" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="445" cy="232" r="24" fill="#d8a432"/><text x="445" y="239" text-anchor="middle" class="n">2</text>
+<text x="485" y="240" class="h">언패킹</text>
+<text x="430" y="310" class="code">a, b = (1, 2, 3)</text>
+<text x="430" y="410" class="b">→ ValueError</text>
+<text x="430" y="460" class="small">왼쪽 변수 개수와 오른쪽</text><text x="430" y="490" class="small">값 개수를 맞춥니다.</text>
+<rect x="730" y="190" width="305" height="350" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="775" cy="232" r="24" fill="#2f6ecb"/><text x="775" y="239" text-anchor="middle" class="n">3</text>
+<text x="815" y="240" class="h">집합 삭제</text>
+<text x="760" y="310" class="code">s = {1, 2}</text><text x="760" y="350" class="code">s.remove(3)</text>
+<text x="760" y="410" class="b">→ KeyError</text>
+<text x="760" y="460" class="small">없는 값이라면 discard()를</text><text x="760" y="490" class="small">사용할 수 있습니다.</text>
+<rect x="1060" y="190" width="305" height="350" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1105" cy="232" r="24" fill="#2fa66d"/><text x="1105" y="239" text-anchor="middle" class="n">4</text>
+<text x="1145" y="240" class="h">빈 집합</text>
+<text x="1090" y="310" class="code">empty = {}</text>
+<text x="1090" y="410" class="b">→ dict</text>
+<text x="1090" y="460" class="small">빈 집합은 반드시 set()으로</text><text x="1090" y="490" class="small">만듭니다.</text>
+<rect x="70" y="600" width="1295" height="140" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="645" class="h">DEBUG CHECKLIST</text>
+<text x="110" y="690" class="b">1. 자료구조 종류 확인 · 2. 수정 가능한지 확인 · 3. 언패킹 개수 확인 · 4. 집합 값 존재 여부 확인 · 5. 빈 집합은 set()</text>
+</svg>
