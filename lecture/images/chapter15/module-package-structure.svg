@@ -2,13 +2,13 @@
 <title id="title">함수에서 모듈과 패키지로 확장하는 구조</title>
 <desc id="desc">함수를 파이썬 파일인 모듈로 묶고 관련 모듈을 패키지 폴더로 구성하는 Chapter 15 구조 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.codeSmall{font-family:Consolas,monospace;font-size:20px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
 <text x="70" y="90" class="t">함수 → 모듈 → 패키지로 역할을 나누어 관리합니다</text>
 <text x="70" y="135" class="s">파일을 많이 만드는 것이 아니라 관련된 코드를 함께 두는 것이 핵심입니다</text>
 <rect x="70" y="205" width="350" height="205" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
 <circle cx="115" cy="245" r="24" fill="#2f6ecb"/><text x="115" y="252" text-anchor="middle" class="n">1</text>
 <text x="160" y="252" class="h">함수</text>
-<text x="105" y="315" class="code">def calculate_total(...):</text>
+<text x="105" y="315" class="codeSmall">def calculate_total(...):</text>
 <text x="105" y="365" class="b">하나의 역할을 코드로 묶음</text>
 <line x1="420" y1="305" x2="530" y2="305" stroke="#4775d1" stroke-width="5"/><polygon points="530,305 510,292 510,318" fill="#4775d1"/>
 <rect x="530" y="205" width="380" height="205" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
