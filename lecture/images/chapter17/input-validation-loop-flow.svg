@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">예외 처리와 입력값 검증 반복 흐름</title>
+<desc id="desc">문자 입력은 ValueError로 처리하고 정수 변환 후 범위를 검사하며 올바른 값이 들어올 때까지 반복하는 Chapter 17 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:19px;font-weight:600}.code{font-family:Consolas,monospace;font-size:19px;font-weight:700}.small{font-size:16px;font-weight:600}.tag{font-size:19px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">예외 처리와 값의 범위 검증은 서로 다른 단계입니다</text>
+<text x="70" y="132" class="s">문자 입력은 변환 예외, 150 같은 정수는 범위 조건으로 처리합니다</text>
+<rect x="90" y="205" width="260" height="150" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="220" y="250" text-anchor="middle" class="h">1. 입력</text>
+<text x="125" y="310" class="code">input("점수: ")</text>
+<line x1="350" y1="280" x2="440" y2="280" stroke="#4775d1" stroke-width="5"/><polygon points="440,280 420,267 420,293" fill="#4775d1"/>
+<rect x="440" y="205" width="300" height="150" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<text x="590" y="250" text-anchor="middle" class="h">2. 정수 변환</text>
+<text x="490" y="310" class="code">score = int(text)</text>
+<line x1="590" y1="355" x2="375" y2="455" stroke="#d85c5c" stroke-width="5"/><polygon points="375,455 395,434 402,452" fill="#d85c5c"/>
+<line x1="740" y1="280" x2="830" y2="280" stroke="#2fa66d" stroke-width="5"/><polygon points="830,280 810,267 810,293" fill="#2fa66d"/>
+<rect x="830" y="205" width="300" height="150" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="980" y="250" text-anchor="middle" class="h">3. 범위 확인</text>
+<text x="870" y="310" class="code">0 &lt;= score &lt;= 100</text>
+<line x1="1130" y1="280" x2="1220" y2="280" stroke="#2fa66d" stroke-width="5"/><polygon points="1220,280 1200,267 1200,293" fill="#2fa66d"/>
+<rect x="1220" y="205" width="150" height="150" rx="24" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<text x="1295" y="250" text-anchor="middle" class="h">완료</text>
+<text x="1295" y="310" text-anchor="middle" class="code">break</text>
+<rect x="120" y="455" width="480" height="165" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<rect x="155" y="485" width="130" height="38" rx="19" fill="#d85c5c"/><text x="220" y="512" text-anchor="middle" class="tag">예외 처리</text>
+<text x="155" y="565" class="code">ValueError → 숫자로 입력 안내</text>
+<text x="155" y="600" class="small">예: "abc", "20.5"를 int()로 변환</text>
+<rect x="840" y="455" width="480" height="165" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="875" y="485" width="130" height="38" rx="19" fill="#d8a432"/><text x="940" y="512" text-anchor="middle" class="tag">값 검증</text>
+<text x="875" y="565" class="code">150 → 정수 변환 성공, 범위 실패</text>
+<text x="875" y="600" class="small">예외가 아니라 if 조건으로 잘못된 범위를 처리</text>
+<path d="M360 620 C360 700 180 700 180 360" fill="none" stroke="#d85c5c" stroke-width="4" stroke-dasharray="10 8"/>
+<path d="M1080 620 C1080 700 260 720 220 360" fill="none" stroke="#d8a432" stroke-width="4" stroke-dasharray="10 8"/>
+<rect x="90" y="735" width="1280" height="45" rx="16" fill="#eef5ff"/>
+<text x="730" y="765" text-anchor="middle" class="b">while True + try-except + if 검증을 연결하면 올바른 입력까지 다시 받을 수 있습니다</text>
+</svg>
