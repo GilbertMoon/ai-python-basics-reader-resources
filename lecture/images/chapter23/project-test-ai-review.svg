@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">개인 지출 관리 프로그램 최종 검증과 AI 리뷰</title>
+<desc id="desc">요구사항별 테스트와 CSV 저장 확인, pandas 교차 검산, AI 코드 리뷰 후 직접 수정과 재테스트를 연결하는 Chapter 23 최종 검증 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:38px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:23px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:15px;font-weight:700}</style>
+<text x="70" y="88" class="t">완성 프로그램은 “실행됨”이 아니라 요구사항과 계산 결과로 검증합니다</text>
+<text x="70" y="132" class="s">표준 파이썬 결과·CSV·pandas·AI 리뷰를 서로 대조해 신뢰도를 높입니다</text>
+<rect x="60" y="195" width="300" height="260" rx="25" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="95" y="225" width="140" height="38" rx="19" fill="#2f6ecb"/><text x="165" y="252" text-anchor="middle" class="tag">1. 기능 테스트</text>
+<text x="95" y="315" class="small">정상 지출 추가</text>
+<text x="95" y="350" class="small">문자 금액·0·음수 입력</text>
+<text x="95" y="385" class="small">빈 목록·목록 출력·합계</text>
+<text x="95" y="420" class="small">저장 후 재실행·불러오기</text>
+<line x1="360" y1="325" x2="405" y2="325" stroke="#4775d1" stroke-width="5"/><polygon points="405,325 385,312 385,338" fill="#4775d1"/>
+<rect x="405" y="195" width="300" height="260" rx="25" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="440" y="225" width="140" height="38" rx="19" fill="#d8a432"/><text x="510" y="252" text-anchor="middle" class="tag">2. 계산 검증</text>
+<text x="440" y="310" class="code">calculate_total()</text>
+<text x="440" y="350" class="small">직접 더한 예상값과 비교</text>
+<text x="440" y="390" class="small">카테고리 합계들의 합</text>
+<text x="440" y="425" class="small">= 전체 지출인지 확인</text>
+<line x1="705" y1="325" x2="750" y2="325" stroke="#d8a432" stroke-width="5"/><polygon points="750,325 730,312 730,338" fill="#d8a432"/>
+<rect x="750" y="195" width="300" height="260" rx="25" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="785" y="225" width="145" height="38" rx="19" fill="#2fa66d"/><text x="857" y="252" text-anchor="middle" class="tag">3. pandas 검산</text>
+<text x="785" y="310" class="code">df["amount"].sum()</text>
+<text x="785" y="350" class="code">df.groupby(</text>
+<text x="785" y="385" class="code"> "category")["amount"].sum()</text>
+<text x="785" y="425" class="small">기본 파이썬 결과와 교차 대조</text>
+<line x1="1050" y1="325" x2="1095" y2="325" stroke="#2fa66d" stroke-width="5"/><polygon points="1095,325 1075,312 1075,338" fill="#2fa66d"/>
+<rect x="1095" y="195" width="285" height="260" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1130" y="225" width="140" height="38" rx="19" fill="#7d64bd"/><text x="1200" y="252" text-anchor="middle" class="tag">4. AI 리뷰</text>
+<text x="1130" y="310" class="small">요구사항 누락?</text>
+<text x="1130" y="350" class="small">입력·파일 오류 처리?</text>
+<text x="1130" y="390" class="small">테스트 빠진 경우?</text>
+<text x="1130" y="425" class="small">전체 재작성 대신 위험 요소 설명</text>
+<rect x="90" y="525" width="1260" height="180" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="570" class="h">AI의 리뷰도 최종 답이 아니라 다시 검증할 제안입니다</text>
+<text x="130" y="620" class="b">AI에 제공</text><text x="270" y="620" class="small">요구사항 · 현재 코드 · 테스트 결과 · 발생한 문제</text>
+<text x="130" y="665" class="b">사람이 확인</text><text x="270" y="665" class="small">제안 이유 이해 → 한 부분만 수정 → 기존 테스트 다시 실행</text>
+<text x="815" y="620" class="b">확장은 마지막</text><text x="970" y="620" class="small">기본 기능이 검증된 뒤 하나씩 추가</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">요구사항 테스트 → 직접 계산 → CSV 확인 → pandas 검산 → AI 리뷰 → 최소 수정 → 재테스트</text>
+</svg>
