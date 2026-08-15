@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">필터링 결측값 처리 그룹 결과 저장 흐름</title>
+<desc id="desc">질문에 맞는 행을 필터링하고 결측값 의미를 확인해 fillna로 표시한 뒤 as_index false 그룹 요약을 to_csv로 저장하는 Chapter 22 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:39px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:16px;font-weight:700}</style>
+<text x="70" y="88" class="t">분석 대상 범위를 정한 뒤 결과를 정리하고 CSV로 저장합니다</text>
+<text x="70" y="132" class="s">필터링·결측값 처리·그룹 요약·저장은 질문과 데이터 의미를 확인한 뒤 이어집니다</text>
+<rect x="60" y="195" width="300" height="265" rx="25" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="95" y="225" width="125" height="38" rx="19" fill="#2f6ecb"/><text x="157" y="252" text-anchor="middle" class="tag">1. 필터링</text>
+<text x="95" y="315" class="code">online = df[</text>
+<text x="95" y="350" class="code"> df["channel"] ==</text>
+<text x="95" y="385" class="code"> "온라인"]</text>
+<text x="95" y="425" class="small">먼저 어떤 행을 볼지 범위 지정</text>
+<line x1="360" y1="325" x2="405" y2="325" stroke="#4775d1" stroke-width="5"/><polygon points="405,325 385,312 385,338" fill="#4775d1"/>
+<rect x="405" y="195" width="300" height="265" rx="25" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="440" y="225" width="145" height="38" rx="19" fill="#d8a432"/><text x="512" y="252" text-anchor="middle" class="tag">2. 결측 표시</text>
+<text x="440" y="315" class="code">df["city"] =</text>
+<text x="440" y="350" class="code">df["city"].fillna(</text>
+<text x="440" y="385" class="code">  "미입력")</text>
+<text x="440" y="425" class="small">왜 비었는지 의미를 먼저 확인</text>
+<line x1="705" y1="325" x2="750" y2="325" stroke="#d8a432" stroke-width="5"/><polygon points="750,325 730,312 730,338" fill="#d8a432"/>
+<rect x="750" y="195" width="300" height="265" rx="25" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="785" y="225" width="145" height="38" rx="19" fill="#2fa66d"/><text x="857" y="252" text-anchor="middle" class="tag">3. 요약 표</text>
+<text x="785" y="315" class="code">groupby(</text>
+<text x="785" y="350" class="code"> "category",</text>
+<text x="785" y="385" class="code"> as_index=False)</text>
+<text x="785" y="425" class="small">그룹 기준을 일반 열로 유지</text>
+<line x1="1050" y1="325" x2="1095" y2="325" stroke="#2fa66d" stroke-width="5"/><polygon points="1095,325 1075,312 1075,338" fill="#2fa66d"/>
+<rect x="1095" y="195" width="285" height="265" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1130" y="225" width="125" height="38" rx="19" fill="#7d64bd"/><text x="1192" y="252" text-anchor="middle" class="tag">4. 저장</text>
+<text x="1130" y="315" class="code">to_csv(...,</text>
+<text x="1130" y="350" class="code"> index=False,</text>
+<text x="1130" y="385" class="code"> encoding=</text>
+<text x="1130" y="420" class="code"> "utf-8-sig")</text>
+<rect x="90" y="530" width="1260" height="165" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="575" class="h">저장 전에는 결과의 의미와 계산이 맞는지 다시 확인합니다</text>
+<text x="130" y="625" class="b">필터링 결과 행 수</text><text x="350" y="625" class="small">원본 조건과 대조</text>
+<text x="600" y="625" class="b">그룹 합계</text><text x="740" y="625" class="small">작은 데이터 몇 행을 직접 계산</text>
+<text x="1040" y="625" class="b">저장 파일</text><text x="1165" y="625" class="small">열·행 확인</text>
+<text x="130" y="665" class="small">index=False는 DataFrame의 인덱스 번호를 별도 CSV 열로 저장하지 않도록 합니다</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">범위 선택 → 의미 확인 → 결측 표시 → 그룹 요약 → 결과 검증 → CSV 저장</text>
+</svg>
