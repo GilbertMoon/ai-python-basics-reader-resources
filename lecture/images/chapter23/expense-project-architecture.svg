@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">개인 지출 관리 프로그램 프로젝트 구조</title>
+<desc id="desc">요구사항에서 지출 딕셔너리와 리스트를 정하고 기능을 함수로 분리한 뒤 메뉴 반복문으로 연결하는 Chapter 23 프로젝트 구조 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:39px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:15px;font-weight:700}</style>
+<text x="70" y="88" class="t">종합 프로젝트는 요구사항 → 데이터 → 함수 → 메뉴 흐름으로 설계합니다</text>
+<text x="70" y="132" class="s">한 번에 전체 코드를 쓰지 않고 역할을 나누면 구현·테스트·디버깅이 쉬워집니다</text>
+<rect x="60" y="195" width="300" height="260" rx="25" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="95" y="225" width="135" height="38" rx="19" fill="#2f6ecb"/><text x="162" y="252" text-anchor="middle" class="tag">1. 요구사항</text>
+<text x="95" y="315" class="b">입력</text><text x="170" y="315" class="small">날짜·카테고리·내용·금액</text>
+<text x="95" y="355" class="b">기능</text><text x="170" y="355" class="small">추가·목록·합계·저장·불러오기</text>
+<text x="95" y="395" class="b">제외</text><text x="170" y="395" class="small">GUI·DB·웹·로그인</text>
+<line x1="360" y1="325" x2="405" y2="325" stroke="#4775d1" stroke-width="5"/><polygon points="405,325 385,312 385,338" fill="#4775d1"/>
+<rect x="405" y="195" width="300" height="260" rx="25" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="440" y="225" width="135" height="38" rx="19" fill="#d8a432"/><text x="507" y="252" text-anchor="middle" class="tag">2. 데이터</text>
+<text x="440" y="315" class="code">expense = {</text>
+<text x="440" y="350" class="code"> date, category,</text>
+<text x="440" y="385" class="code"> description, amount</text>
+<text x="440" y="420" class="code">}</text>
+<text x="585" y="420" class="small">여러 건 → list</text>
+<line x1="705" y1="325" x2="750" y2="325" stroke="#d8a432" stroke-width="5"/><polygon points="750,325 730,312 730,338" fill="#d8a432"/>
+<rect x="750" y="195" width="300" height="260" rx="25" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<rect x="785" y="225" width="135" height="38" rx="19" fill="#2fa66d"/><text x="852" y="252" text-anchor="middle" class="tag">3. 함수</text>
+<text x="785" y="310" class="code">add_expense()</text>
+<text x="785" y="342" class="code">show_expenses()</text>
+<text x="785" y="374" class="code">calculate_total()</text>
+<text x="785" y="406" class="code">save / load</text>
+<text x="785" y="438" class="small">함수 하나 = 한 가지 역할</text>
+<line x1="1050" y1="325" x2="1095" y2="325" stroke="#2fa66d" stroke-width="5"/><polygon points="1095,325 1075,312 1075,338" fill="#2fa66d"/>
+<rect x="1095" y="195" width="285" height="260" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1130" y="225" width="135" height="38" rx="19" fill="#7d64bd"/><text x="1197" y="252" text-anchor="middle" class="tag">4. 메뉴</text>
+<text x="1130" y="315" class="code">while True:</text>
+<text x="1130" y="355" class="small">1 추가 · 2 목록</text>
+<text x="1130" y="390" class="small">3 요약 · 4 저장</text>
+<text x="1130" y="425" class="small">0 종료</text>
+<rect x="90" y="525" width="1260" height="175" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="570" class="h">앞 장의 문법이 하나의 프로그램 안에서 연결됩니다</text>
+<text x="130" y="620" class="b">입력·조건문·반복문</text><text x="355" y="620" class="small">사용자 메뉴와 입력 검증</text>
+<text x="655" y="620" class="b">리스트·딕셔너리·함수</text><text x="900" y="620" class="small">데이터 구조와 기능 분리</text>
+<text x="130" y="665" class="b">CSV·예외 처리</text><text x="355" y="665" class="small">영구 저장과 안전한 불러오기</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">범위를 작게 정하고 → 데이터 모양을 정하고 → 함수를 나누고 → 메뉴로 연결합니다</text>
+</svg>
