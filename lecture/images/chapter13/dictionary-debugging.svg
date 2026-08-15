@@ -2,7 +2,7 @@
 <title id="title">딕셔너리 오류 디버깅 체크리스트</title>
 <desc id="desc">KeyError, 추가와 수정 구분, 중첩 딕셔너리 단계별 접근, items 언패킹을 점검하는 Chapter 13 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:21px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:21px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
 <text x="70" y="90" class="t">딕셔너리 오류는 키의 존재와 접근 단계를 먼저 확인합니다</text>
 <text x="70" y="135" class="s">키 이름, 중첩 깊이, items() 언패킹을 한 단계씩 확인하면 원인을 찾기 쉽습니다</text>
 <rect x="70" y="190" width="305" height="350" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
