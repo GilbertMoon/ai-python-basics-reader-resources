@@ -21,9 +21,9 @@
 <line x1="705" y1="325" x2="750" y2="325" stroke="#d8a432" stroke-width="5"/><polygon points="750,325 730,312 730,338" fill="#d8a432"/>
 <rect x="750" y="195" width="300" height="260" rx="25" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
 <rect x="785" y="225" width="145" height="38" rx="19" fill="#2fa66d"/><text x="857" y="252" text-anchor="middle" class="tag">3. pandas 검산</text>
-<text x="785" y="310" class="code">df["amount"].sum()</text>
-<text x="785" y="350" class="code">df.groupby(</text>
-<text x="785" y="385" class="code"> "category")["amount"].sum()</text>
+<text x="785" y="305" class="code">df["amount"].sum()</text>
+<text x="785" y="345" class="code">df.groupby("category")</text>
+<text x="785" y="385" class="code">["amount"].sum()</text>
 <text x="785" y="425" class="small">기본 파이썬 결과와 교차 대조</text>
 <line x1="1050" y1="325" x2="1095" y2="325" stroke="#2fa66d" stroke-width="5"/><polygon points="1095,325 1075,312 1075,338" fill="#2fa66d"/>
 <rect x="1095" y="195" width="285" height="260" rx="25" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
