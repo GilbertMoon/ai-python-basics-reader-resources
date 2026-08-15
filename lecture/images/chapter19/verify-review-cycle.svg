@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">예상 결과 검증과 AI 코드 리뷰 반복 과정</title>
+<desc id="desc">작은 테스트 데이터로 예상 결과를 정하고 실행 결과와 비교한 뒤 AI 코드 리뷰와 직접 수정을 반복하는 Chapter 19 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:39px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.n{font-size:19px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">코드가 실행되는 것과 결과가 맞는 것은 다릅니다</text>
+<text x="70" y="132" class="s">예상 결과를 먼저 적고 실행 결과와 비교한 뒤 리뷰와 수정을 반복합니다</text>
+<rect x="70" y="195" width="260" height="190" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="110" cy="235" r="22" fill="#2f6ecb"/><text x="110" y="242" text-anchor="middle" class="n">1</text><text x="150" y="242" class="h">예상값</text>
+<text x="105" y="305" class="b">작은 테스트 데이터 준비</text>
+<text x="105" y="345" class="small">사람이 직접 합계 계산</text>
+<line x1="330" y1="290" x2="395" y2="290" stroke="#4775d1" stroke-width="5"/><polygon points="395,290 375,277 375,303" fill="#4775d1"/>
+<rect x="395" y="195" width="260" height="190" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="435" cy="235" r="22" fill="#d8a432"/><text x="435" y="242" text-anchor="middle" class="n">2</text><text x="475" y="242" class="h">실행</text>
+<text x="430" y="305" class="b">함수 하나부터 실행</text>
+<text x="430" y="345" class="small">실제 결과를 기록</text>
+<line x1="655" y1="290" x2="720" y2="290" stroke="#d8a432" stroke-width="5"/><polygon points="720,290 700,277 700,303" fill="#d8a432"/>
+<rect x="720" y="195" width="260" height="190" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="760" cy="235" r="22" fill="#2fa66d"/><text x="760" y="242" text-anchor="middle" class="n">3</text><text x="800" y="242" class="h">비교</text>
+<text x="755" y="305" class="code">actual == expected</text>
+<text x="755" y="345" class="small">다르면 원인을 확인</text>
+<line x1="980" y1="290" x2="1045" y2="290" stroke="#2fa66d" stroke-width="5"/><polygon points="1045,290 1025,277 1025,303" fill="#2fa66d"/>
+<rect x="1045" y="195" width="325" height="190" rx="24" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<circle cx="1085" cy="235" r="22" fill="#7d64bd"/><text x="1085" y="242" text-anchor="middle" class="n">4</text><text x="1125" y="242" class="h">AI 코드 리뷰</text>
+<text x="1080" y="305" class="small">요구사항 충족?</text>
+<text x="1080" y="335" class="small">이름이 읽기 쉬운가?</text>
+<text x="1080" y="365" class="small">배우지 않은 문법이 있는가?</text>
+<rect x="90" y="465" width="1260" height="190" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="510" class="h">권장 반복 과정</text>
+<text x="130" y="565" class="b">문제 정의 → 설계 → 작게 구현 → 실행 → 예상값과 비교 → AI 검토 → 직접 수정</text>
+<text x="130" y="610" class="small">AI에게 새 코드를 다시 쓰게 하기보다 현재 구조를 유지한 채 문제점과 개선 이유를 설명해 달라고 요청합니다</text>
+<path d="M1170 655 C1170 720 300 735 205 660" fill="none" stroke="#7d64bd" stroke-width="4" stroke-dasharray="10 8"/>
+<polygon points="205,660 228,651 222,674" fill="#7d64bd"/>
+<rect x="90" y="735" width="1260" height="45" rx="16" fill="#eef5ff"/>
+<text x="720" y="765" text-anchor="middle" class="b">AI의 제안도 직접 실행·검증·수정해야 비로소 자신의 코드가 됩니다</text>
+</svg>
