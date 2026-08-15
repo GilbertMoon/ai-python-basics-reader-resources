@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">while 반복 상태 변화와 종료 흐름</title><desc id="desc">while 조건을 확인하고 코드를 실행한 뒤 상태를 변경하여 언젠가 False가 되면서 반복이 끝나는 과정을 설명하는 Chapter 10 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:56px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:29px;font-weight:800}.b{font-size:23px;font-weight:600}.code{font-family:Consolas,monospace;font-size:27px;font-weight:700}.small{font-size:20px;font-weight:600}.n{font-size:23px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">while문은 조건이 True인 동안 반복합니다</text>
+<text x="70" y="135" class="s">핵심은 반복할 때마다 조건에 사용한 상태가 바뀌는지 확인하는 것입니다</text>
+<rect x="80" y="205" width="300" height="110" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<text x="230" y="248" text-anchor="middle" class="h">시작 상태</text>
+<text x="230" y="290" text-anchor="middle" class="code">count = 1</text>
+<line x1="380" y1="260" x2="520" y2="260" stroke="#4775d1" stroke-width="5"/>
+<polygon points="520,260 500,247 500,273" fill="#4775d1"/>
+<polygon points="700,175 880,260 700,345 520,260" fill="#f6f9ff" stroke="#4775d1" stroke-width="4"/>
+<text x="700" y="250" text-anchor="middle" class="h">조건 확인</text>
+<text x="700" y="288" text-anchor="middle" class="code">count &lt;= 5 ?</text>
+<line x1="880" y1="235" x2="1010" y2="235" stroke="#2fa66d" stroke-width="5"/>
+<polygon points="1010,235 990,222 990,248" fill="#2fa66d"/>
+<text x="945" y="210" text-anchor="middle" class="b" fill="#188554">True</text>
+<rect x="1010" y="180" width="330" height="110" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="1175" y="222" text-anchor="middle" class="h">코드 실행</text>
+<text x="1175" y="265" text-anchor="middle" class="code">print(count)</text>
+<line x1="1175" y1="290" x2="1175" y2="405" stroke="#4775d1" stroke-width="5"/>
+<polygon points="1175,405 1162,385 1188,385" fill="#4775d1"/>
+<rect x="1010" y="405" width="330" height="105" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<text x="1175" y="447" text-anchor="middle" class="h">상태 변경</text>
+<text x="1175" y="488" text-anchor="middle" class="code">count += 1</text>
+<path d="M1010 458 C820 545 700 500 700 355" fill="none" stroke="#4775d1" stroke-width="5" stroke-dasharray="12 10"/>
+<polygon points="700,355 687,375 713,375" fill="#4775d1"/>
+<text x="825" y="520" class="b">다시 조건 확인</text>
+<line x1="700" y1="345" x2="700" y2="575" stroke="#e27676" stroke-width="5"/>
+<polygon points="700,575 687,555 713,555" fill="#e27676"/>
+<text x="735" y="445" class="b" fill="#be4747">False</text>
+<rect x="535" y="575" width="330" height="90" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<text x="700" y="630" text-anchor="middle" class="h">반복 종료</text>
+<rect x="80" y="700" width="1280" height="70" rx="20" fill="#eef5ff"/>
+<circle cx="125" cy="735" r="23" fill="#2f6ecb"/><text x="125" y="743" text-anchor="middle" class="n">!</text><text x="165" y="743" class="b">상태 변경이 없다면 조건이 계속 True로 남아 무한 반복이 될 수 있습니다.</text>
+</svg>
