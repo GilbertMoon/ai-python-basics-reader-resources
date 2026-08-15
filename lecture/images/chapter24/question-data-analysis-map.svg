@@ -21,10 +21,11 @@
 <line x1="670" y1="315" x2="720" y2="315" stroke="#d89f2d" stroke-width="5"/><polygon points="720,315 700,302 700,328" fill="#d89f2d"/>
 <rect x="720" y="185" width="300" height="260" rx="26" fill="#eaf9f2" stroke="#42b883" stroke-width="3"/>
 <rect x="755" y="215" width="150" height="38" rx="19" fill="#2ea66b"/><text x="830" y="242" text-anchor="middle" class="tag">3. 필요한 계산</text>
-<text x="755" y="305" class="small">먼저 주문별 매출 열 만들기</text>
-<text x="755" y="345" class="code">sales_amount = price * quantity</text>
-<text x="755" y="390" class="small">질문에 맞는 그룹 기준 선택</text>
-<text x="755" y="425" class="small">category · channel · customer_type · product</text>
+<text x="755" y="300" class="small">먼저 주문별 매출 열 만들기</text>
+<text x="755" y="338" class="code">sales_amount = price * quantity</text>
+<text x="755" y="378" class="small">질문에 맞는 그룹 기준 선택</text>
+<text x="755" y="410" class="small">category · channel</text>
+<text x="755" y="437" class="small">customer_type · product</text>
 <line x1="1020" y1="315" x2="1070" y2="315" stroke="#2ea66b" stroke-width="5"/><polygon points="1070,315 1050,302 1050,328" fill="#2ea66b"/>
 <rect x="1070" y="185" width="310" height="260" rx="26" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
 <rect x="1105" y="215" width="170" height="38" rx="19" fill="#7d63be"/><text x="1190" y="242" text-anchor="middle" class="tag">4. pandas 기능</text>
