@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">질문에서 시작하는 CSV 데이터 분석 흐름</title>
+<desc id="desc">분석 질문을 먼저 정하고 한 행과 열의 의미를 이해한 뒤 필요한 계산과 pandas 기능을 선택하는 Chapter 24 개념도</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#14285f}.t{font-size:38px;font-weight:800}.s{font-size:22px;font-weight:700;fill:#52617e}.h{font-size:22px;font-weight:800}.b{font-size:17px;font-weight:600}.small{font-size:14px;font-weight:600}.tag{font-size:17px;font-weight:800;fill:#fff}.code{font-family:Consolas,monospace;font-size:14px;font-weight:700}</style>
+<text x="70" y="88" class="t">데이터 분석은 pandas 함수보다 “질문”에서 시작합니다</text>
+<text x="70" y="130" class="s">무엇을 알고 싶은지 정하면 필요한 열·계산·집계 기준이 선명해집니다</text>
+<rect x="60" y="185" width="280" height="260" rx="26" fill="#eef5ff" stroke="#7aa8f5" stroke-width="3"/>
+<rect x="95" y="215" width="120" height="38" rx="19" fill="#2f6ecb"/><text x="155" y="242" text-anchor="middle" class="tag">1. 질문</text>
+<text x="95" y="305" class="small">어떤 카테고리 매출이 큰가?</text>
+<text x="95" y="345" class="small">어느 채널의 매출이 큰가?</text>
+<text x="95" y="385" class="small">신규·기존 고객은 어떻게 다른가?</text>
+<text x="95" y="425" class="small">어떤 상품이 가장 큰 매출을 만들었나?</text>
+<line x1="340" y1="315" x2="390" y2="315" stroke="#4477d2" stroke-width="5"/><polygon points="390,315 370,302 370,328" fill="#4477d2"/>
+<rect x="390" y="185" width="280" height="260" rx="26" fill="#fff8ef" stroke="#f0c262" stroke-width="3"/>
+<rect x="425" y="215" width="150" height="38" rx="19" fill="#d89f2d"/><text x="500" y="242" text-anchor="middle" class="tag">2. 데이터 의미</text>
+<text x="425" y="305" class="small">한 행 = 주문 한 건</text>
+<text x="425" y="345" class="small">price = 상품 단가</text>
+<text x="425" y="385" class="small">quantity = 한 주문의 수량</text>
+<text x="425" y="425" class="small">그룹 기준 열의 의미도 확인</text>
+<line x1="670" y1="315" x2="720" y2="315" stroke="#d89f2d" stroke-width="5"/><polygon points="720,315 700,302 700,328" fill="#d89f2d"/>
+<rect x="720" y="185" width="300" height="260" rx="26" fill="#eaf9f2" stroke="#42b883" stroke-width="3"/>
+<rect x="755" y="215" width="150" height="38" rx="19" fill="#2ea66b"/><text x="830" y="242" text-anchor="middle" class="tag">3. 필요한 계산</text>
+<text x="755" y="305" class="small">먼저 주문별 매출 열 만들기</text>
+<text x="755" y="345" class="code">sales_amount = price * quantity</text>
+<text x="755" y="390" class="small">질문에 맞는 그룹 기준 선택</text>
+<text x="755" y="425" class="small">category · channel · customer_type · product</text>
+<line x1="1020" y1="315" x2="1070" y2="315" stroke="#2ea66b" stroke-width="5"/><polygon points="1070,315 1050,302 1050,328" fill="#2ea66b"/>
+<rect x="1070" y="185" width="310" height="260" rx="26" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<rect x="1105" y="215" width="170" height="38" rx="19" fill="#7d63be"/><text x="1190" y="242" text-anchor="middle" class="tag">4. pandas 기능</text>
+<text x="1105" y="305" class="code">read_csv()</text>
+<text x="1105" y="340" class="code">groupby()</text>
+<text x="1105" y="375" class="code">sum()</text>
+<text x="1105" y="410" class="code">sort_values()</text>
+<text x="1105" y="445" class="small">함수는 질문에 답하기 위한 수단</text>
+<rect x="80" y="525" width="1280" height="190" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="120" y="570" class="h">기억할 핵심</text>
+<text x="120" y="620" class="b">좋은 분석 흐름</text><text x="285" y="620" class="small">질문 → 데이터 의미 → 필요한 계산 → 적절한 pandas 기능</text>
+<text x="120" y="665" class="b">자주 하는 실수</text><text x="285" y="665" class="small">코드를 먼저 정하고 질문을 나중에 붙이기 · quantity를 주문 건수로 오해하기</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">질문이 선명할수록 어떤 열을 보고 어떤 계산을 해야 하는지 쉽게 결정할 수 있습니다</text>
+</svg>
