@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">오류 종류와 트레이스백 읽기</title>
+<desc id="desc">문법 오류, 실행 중 예외, 논리 오류를 구분하고 트레이스백의 마지막 줄과 줄 번호를 읽는 순서를 설명하는 Chapter 17 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:19px;font-weight:600}.code{font-family:Consolas,monospace;font-size:19px;font-weight:700}.small{font-size:16px;font-weight:600}.n{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">오류의 종류를 먼저 구분하고, 예외라면 트레이스백을 읽습니다</text>
+<text x="70" y="132" class="s">try-except는 주로 실행 중 예상 가능한 예외에 대응하는 문법입니다</text>
+<rect x="70" y="190" width="400" height="260" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="232" r="23" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">문법 오류</text>
+<text x="105" y="305" class="code">if score &gt;= 60</text>
+<text x="105" y="345" class="code">    print("통과")</text>
+<text x="105" y="400" class="b">→ SyntaxError</text>
+<text x="105" y="430" class="small">실행 전에 문법을 먼저 고쳐야 합니다</text>
+<rect x="520" y="190" width="400" height="260" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="565" cy="232" r="23" fill="#2f6ecb"/><text x="565" y="239" text-anchor="middle" class="n">2</text><text x="605" y="240" class="h">실행 중 예외</text>
+<text x="555" y="320" class="code">age = int("스물")</text>
+<text x="555" y="385" class="b">→ ValueError</text>
+<text x="555" y="425" class="small">예상 가능한 문제는 예외 처리로 대응 가능</text>
+<rect x="970" y="190" width="400" height="260" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="1015" cy="232" r="23" fill="#d8a432"/><text x="1015" y="239" text-anchor="middle" class="n">3</text><text x="1055" y="240" class="h">논리 오류</text>
+<text x="1005" y="305" class="code">price = 10000</text>
+<text x="1005" y="345" class="code">quantity = 3</text>
+<text x="1005" y="385" class="code">print(price + quantity)</text>
+<text x="1005" y="425" class="small">실행은 되지만 계산 의도를 다시 확인</text>
+<rect x="90" y="515" width="1260" height="190" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="560" class="h">트레이스백 읽기 순서</text>
+<text x="130" y="610" class="code">ValueError: invalid literal for int() ...</text><text x="830" y="610" class="b">① 마지막 줄에서 예외 이름 확인</text>
+<text x="130" y="650" class="code">File "example.py", line 1</text><text x="830" y="650" class="b">② 파일과 줄 번호 확인</text>
+<text x="130" y="690" class="code">age = int("스물")</text><text x="830" y="690" class="b">③ 실제 값과 연산 확인</text>
+<rect x="90" y="742" width="1260" height="45" rx="16" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">처음에는 트레이스백의 마지막 줄 → 줄 번호 → 실제 코드 순서로 읽습니다</text>
+</svg>
