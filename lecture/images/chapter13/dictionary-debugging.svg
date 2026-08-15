@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">딕셔너리 오류 디버깅 체크리스트</title>
+<desc id="desc">KeyError, 추가와 수정 구분, 중첩 딕셔너리 단계별 접근, items 언패킹을 점검하는 Chapter 13 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:20px;font-weight:600}.code{font-family:Consolas,monospace;font-size:21px;font-weight:700}.small{font-size:17px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">딕셔너리 오류는 키의 존재와 접근 단계를 먼저 확인합니다</text>
+<text x="70" y="135" class="s">키 이름, 중첩 깊이, items() 언패킹을 한 단계씩 확인하면 원인을 찾기 쉽습니다</text>
+<rect x="70" y="190" width="305" height="350" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="115" cy="232" r="24" fill="#d85c5c"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">없는 키 조회</text>
+<text x="100" y="305" class="code">data = {"name": "민수"}</text><text x="100" y="345" class="code">data["city"]</text>
+<text x="100" y="405" class="b">→ KeyError</text>
+<text x="100" y="455" class="small">키 철자와 존재 여부를 확인</text><text x="100" y="485" class="small">필요하면 get() 또는 in 사용</text>
+<rect x="400" y="190" width="305" height="350" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="445" cy="232" r="24" fill="#d8a432"/><text x="445" y="239" text-anchor="middle" class="n">2</text><text x="485" y="240" class="h">추가 vs 수정</text>
+<text x="430" y="305" class="code">data["score"] = 90</text>
+<text x="430" y="370" class="small">score 키가 없으면 → 추가</text><text x="430" y="405" class="small">score 키가 있으면 → 수정</text>
+<text x="430" y="470" class="b">같은 대입 문법</text>
+<text x="430" y="500" class="small">실행 전 키 존재 여부 확인</text>
+<rect x="730" y="190" width="305" height="350" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="775" cy="232" r="24" fill="#2f6ecb"/><text x="775" y="239" text-anchor="middle" class="n">3</text><text x="815" y="240" class="h">중첩 접근</text>
+<text x="760" y="305" class="code">student["contact"]</text><text x="760" y="345" class="code">       ["email"]</text>
+<text x="760" y="405" class="b">바깥 키 → 안쪽 키</text>
+<text x="760" y="455" class="small">한 번에 읽지 말고 중간 결과를</text><text x="760" y="485" class="small">출력해 구조를 확인</text>
+<rect x="1060" y="190" width="305" height="350" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="1105" cy="232" r="24" fill="#2fa66d"/><text x="1105" y="239" text-anchor="middle" class="n">4</text><text x="1145" y="240" class="h">items() 반복</text>
+<text x="1090" y="305" class="code">for key, value in</text><text x="1090" y="345" class="code">    data.items():</text>
+<text x="1090" y="405" class="b">한 항목은 (key, value)</text>
+<text x="1090" y="455" class="small">받는 변수도 두 개로 맞추는지</text><text x="1090" y="485" class="small">확인합니다.</text>
+<rect x="70" y="600" width="1295" height="140" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="110" y="645" class="h">DEBUG CHECKLIST</text>
+<text x="110" y="690" class="b">1. 키 철자 · 2. 키 존재 여부 · 3. 중첩 구조를 바깥부터 · 4. items() 변수 개수 · 5. 한 번에 한 곳만 수정</text>
+</svg>
