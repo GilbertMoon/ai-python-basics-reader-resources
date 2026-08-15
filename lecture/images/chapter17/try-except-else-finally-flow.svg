@@ -19,9 +19,10 @@
 <rect x="875" y="460" width="100" height="38" rx="19" fill="#2fa66d"/><text x="925" y="487" text-anchor="middle" class="tag">else</text>
 <text x="875" y="550" class="code">print(f"입력 성공: {number}")</text>
 <text x="875" y="585" class="small">try에서 예외가 없을 때만 실행</text>
-<line x1="365" y1="605" x2="610" y2="675" stroke="#6d7b99" stroke-width="4"/><line x1="1075" y1="605" x2="830" y2="675" stroke="#6d7b99" stroke-width="4"/>
-<rect x="520" y="650" width="400" height="105" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
-<rect x="555" y="675" width="110" height="38" rx="19" fill="#d8a432"/><text x="610" y="702" text-anchor="middle" class="tag">finally</text>
-<text x="690" y="703" class="b">성공·실패와 관계없이 마지막에 실행</text>
-<text x="720" y="785" text-anchor="middle" class="small">처음에는 try-except만으로 시작하고, 필요한 경우에만 else와 finally를 추가합니다</text>
+<line x1="365" y1="605" x2="610" y2="665" stroke="#6d7b99" stroke-width="4"/><line x1="1075" y1="605" x2="830" y2="665" stroke="#6d7b99" stroke-width="4"/>
+<rect x="520" y="642" width="400" height="120" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<rect x="555" y="665" width="110" height="38" rx="19" fill="#d8a432"/><text x="610" y="692" text-anchor="middle" class="tag">finally</text>
+<text x="720" y="725" text-anchor="middle" class="small">성공·실패와 관계없이</text>
+<text x="720" y="750" text-anchor="middle" class="small">마지막에 실행</text>
+<text x="720" y="790" text-anchor="middle" class="small">처음에는 try-except부터 시작하고 필요한 경우에만 else와 finally를 추가합니다</text>
 </svg>
