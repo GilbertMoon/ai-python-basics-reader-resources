@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">__init__ self 속성 초기화 흐름</title>
+<desc id="desc">객체 생성 시 전달한 인수가 __init__으로 들어가고 self를 통해 현재 객체의 속성에 저장되는 Chapter 18 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:26px;font-weight:800}.b{font-size:19px;font-weight:600}.code{font-family:Consolas,monospace;font-size:19px;font-weight:700}.small{font-size:16px;font-weight:600}.n{font-size:20px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">객체를 만들 때 받은 값은 __init__에서 self의 속성으로 저장됩니다</text>
+<text x="70" y="132" class="s">self는 “현재 만들어지고 있는 이 객체”를 가리킨다고 이해하면 됩니다</text>
+<rect x="60" y="205" width="315" height="220" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="105" cy="247" r="23" fill="#2f6ecb"/><text x="105" y="254" text-anchor="middle" class="n">1</text><text x="145" y="255" class="h">객체 생성</text>
+<text x="95" y="325" class="code">Student("민수", 85)</text>
+<text x="95" y="380" class="small">name과 score 값을 전달</text>
+<line x1="375" y1="315" x2="445" y2="315" stroke="#4775d1" stroke-width="5"/><polygon points="445,315 425,302 425,328" fill="#4775d1"/>
+<rect x="445" y="205" width="380" height="220" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="490" cy="247" r="23" fill="#d8a432"/><text x="490" y="254" text-anchor="middle" class="n">2</text><text x="530" y="255" class="h">__init__ 실행</text>
+<text x="480" y="315" class="code">def __init__(self, name, score):</text>
+<text x="500" y="360" class="code">self.name = name</text>
+<text x="500" y="395" class="code">self.score = score</text>
+<line x1="825" y1="315" x2="895" y2="315" stroke="#d8a432" stroke-width="5"/><polygon points="895,315 875,302 875,328" fill="#d8a432"/>
+<rect x="895" y="205" width="485" height="220" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="940" cy="247" r="23" fill="#2fa66d"/><text x="940" y="254" text-anchor="middle" class="n">3</text><text x="980" y="255" class="h">객체에 속성 저장</text>
+<text x="935" y="325" class="code">student1.name  → "민수"</text>
+<text x="935" y="375" class="code">student1.score → 85</text>
+<rect x="90" y="500" width="600" height="165" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="545" class="h">self가 바뀌면 저장 위치도 바뀝니다</text>
+<text x="130" y="595" class="code">student1 → self.name = "민수"</text>
+<text x="130" y="635" class="code">student2 → self.name = "지영"</text>
+<rect x="750" y="500" width="600" height="165" rx="26" fill="#eef5ff" stroke="#c7ddf8" stroke-width="2"/>
+<text x="790" y="545" class="h">속성은 객체가 가지고 있는 데이터입니다</text>
+<text x="790" y="595" class="code">student1.score</text><text x="1030" y="595" class="b">읽기</text>
+<text x="790" y="635" class="code">student1.score = 90</text><text x="1080" y="635" class="b">수정</text>
+<rect x="90" y="720" width="1260" height="55" rx="18" fill="#fffaf1"/>
+<text x="720" y="755" text-anchor="middle" class="b">__init__ = 처음 상태 준비 · self = 현재 객체 · self.name / self.score = 객체의 속성</text>
+</svg>
