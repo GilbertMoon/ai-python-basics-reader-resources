@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">함수에서 모듈과 패키지로 확장하는 구조</title>
+<desc id="desc">함수를 파이썬 파일인 모듈로 묶고 관련 모듈을 패키지 폴더로 구성하는 Chapter 15 구조 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:23px;font-weight:700}.small{font-size:18px;font-weight:600}.n{font-size:21px;font-weight:800;fill:#fff}</style>
+<text x="70" y="90" class="t">함수 → 모듈 → 패키지로 역할을 나누어 관리합니다</text>
+<text x="70" y="135" class="s">파일을 많이 만드는 것이 아니라 관련된 코드를 함께 두는 것이 핵심입니다</text>
+<rect x="70" y="205" width="350" height="205" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="115" cy="245" r="24" fill="#2f6ecb"/><text x="115" y="252" text-anchor="middle" class="n">1</text>
+<text x="160" y="252" class="h">함수</text>
+<text x="105" y="315" class="code">def calculate_total(...):</text>
+<text x="105" y="365" class="b">하나의 역할을 코드로 묶음</text>
+<line x1="420" y1="305" x2="530" y2="305" stroke="#4775d1" stroke-width="5"/><polygon points="530,305 510,292 510,318" fill="#4775d1"/>
+<rect x="530" y="205" width="380" height="205" rx="26" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="575" cy="245" r="24" fill="#2fa66d"/><text x="575" y="252" text-anchor="middle" class="n">2</text>
+<text x="620" y="252" class="h">모듈</text>
+<text x="565" y="315" class="code">price.py</text>
+<text x="565" y="365" class="b">관련 함수·변수 등을 담은 .py 파일</text>
+<line x1="910" y1="305" x2="1020" y2="305" stroke="#2fa66d" stroke-width="5"/><polygon points="1020,305 1000,292 1000,318" fill="#2fa66d"/>
+<rect x="1020" y="205" width="350" height="205" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="1065" cy="245" r="24" fill="#d8a432"/><text x="1065" y="252" text-anchor="middle" class="n">3</text>
+<text x="1110" y="252" class="h">패키지</text>
+<text x="1055" y="315" class="code">shop/</text>
+<text x="1055" y="355" class="code">├── __init__.py</text>
+<text x="1055" y="390" class="code">└── price.py</text>
+<rect x="90" y="485" width="1260" height="190" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="535" class="h">다른 파일에서 필요한 기능 불러오기</text>
+<text x="130" y="595" class="code">import math_tools</text><text x="480" y="595" class="b">→ 같은 프로젝트의 모듈 사용</text>
+<text x="130" y="640" class="code">from shop.price import calculate_total</text><text x="680" y="640" class="b">→ 패키지 안의 기능 사용</text>
+<rect x="90" y="720" width="1260" height="55" rx="18" fill="#eef5ff"/>
+<text x="720" y="755" text-anchor="middle" class="b">한 역할 = 함수 · 관련 기능 파일 = 모듈 · 관련 모듈 폴더 = 패키지</text>
+</svg>
