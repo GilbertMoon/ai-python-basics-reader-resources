@@ -2,7 +2,7 @@
 <title id="title">딕셔너리 안전 조회 방법</title>
 <desc id="desc">대괄호 조회와 get 메서드, in 연산자를 비교해 존재하지 않는 키를 안전하게 다루는 방법을 설명하는 Chapter 13 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:54px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:42px;font-weight:800}.s{font-size:27px;font-weight:700;fill:#52617e}.h{font-size:28px;font-weight:800}.b{font-size:21px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px;font-weight:700}.small{font-size:18px;font-weight:600}.tag{font-size:20px;font-weight:800;fill:#fff}</style>
 <text x="70" y="90" class="t">키가 없을 수도 있다면 조회 방법을 먼저 선택합니다</text>
 <text x="70" y="135" class="s">반드시 필요한 값인지, 선택적인 값인지에 따라 []와 get()을 구분합니다</text>
 <rect x="70" y="195" width="400" height="350" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
