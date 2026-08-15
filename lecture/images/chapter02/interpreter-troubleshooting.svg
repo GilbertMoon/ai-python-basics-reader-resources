@@ -1,12 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
 <title id="title">Python 실행이 안 될 때 확인 순서</title><desc id="desc">python 명령, py 명령, 터미널 재시작, VS Code 인터프리터 선택을 순서대로 확인하는 문제 해결 인포그래픽</desc>
 <rect width="1440" height="810" fill="#ffffff"/>
-<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#13275f}.title{font-size:58px;font-weight:850}.sub{font-size:28px;font-weight:700;fill:#4a5878}.q{font-size:27px;font-weight:800}.body{font-size:22px;font-weight:620}.cmd{font-size:23px;font-family:Consolas,monospace;fill:#fff}.foot{font-size:34px;font-weight:850}</style>
-<text x="720" y="84" text-anchor="middle" class="title">Python 실행이 안 된다면 어디부터 확인할까요?</text><text x="720" y="130" text-anchor="middle" class="sub">오류를 한꺼번에 고치려 하지 말고 한 단계씩 확인합니다</text>
-<g transform="translate(120 200)"><rect x="0" y="0" width="280" height="180" rx="26" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/><text x="140" y="50" text-anchor="middle" class="q">① 새 터미널 열기</text><text x="140" y="92" text-anchor="middle" class="body">설치 후 기존 터미널은</text><text x="140" y="126" text-anchor="middle" class="body">환경 변경을 모를 수 있습니다</text></g>
-<g transform="translate(580 200)"><rect x="0" y="0" width="280" height="180" rx="26" fill="#f5fcfc" stroke="#0f9f98" stroke-width="3"/><text x="140" y="46" text-anchor="middle" class="q">② 버전 확인</text><rect x="38" y="72" width="204" height="58" rx="12" fill="#17233f"/><text x="140" y="108" text-anchor="middle" class="cmd">python --version</text><text x="140" y="158" text-anchor="middle" class="body">버전이 나오면 Python은 실행됨</text></g>
-<g transform="translate(1040 200)"><rect x="0" y="0" width="280" height="180" rx="26" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/><text x="140" y="46" text-anchor="middle" class="q">③ Windows 대안</text><rect x="48" y="72" width="184" height="58" rx="12" fill="#17233f"/><text x="140" y="108" text-anchor="middle" class="cmd">py --version</text><text x="140" y="158" text-anchor="middle" class="body">python과 py 결과를 비교</text></g>
-<line x1="400" y1="290" x2="580" y2="290" stroke="#2864dc" stroke-width="5"/><polygon points="580,290 556,276 556,304" fill="#2864dc"/><line x1="860" y1="290" x2="1040" y2="290" stroke="#0f9f98" stroke-width="5"/><polygon points="1040,290 1016,276 1016,304" fill="#0f9f98"/>
-<g transform="translate(340 465)"><rect x="0" y="0" width="760" height="155" rx="28" fill="#f7faff" stroke="#a8c1f6" stroke-width="2"/><text x="380" y="48" text-anchor="middle" class="q">④ VS Code에서는 Python: Select Interpreter 확인</text><text x="380" y="88" text-anchor="middle" class="body">설치된 Python과 VS Code가 선택한 Python이 다르면 실행 결과가 달라질 수 있습니다.</text><text x="380" y="126" text-anchor="middle" class="body">상태 표시줄 또는 Command Palette에서 사용할 인터프리터를 선택합니다.</text></g>
-<rect x="170" y="670" width="1100" height="85" rx="24" fill="#effaf8" stroke="#8fd8d2" stroke-width="2"/><text x="720" y="725" text-anchor="middle" class="foot">좋은 디버깅 = 오류 문구 + 실행한 명령 + 현재 환경을 차례대로 확인하기</text>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#13275f}.title{font-size:58px;font-weight:850}.sub{font-size:28px;font-weight:700;fill:#4a5878}.q{font-size:27px;font-weight:800}.body{font-size:22px;font-weight:620}.cmd{font-size:23px;font-family:Consolas,monospace;fill:#fff}.yes{font-size:22px;font-weight:800;fill:#0f9f98}.no{font-size:22px;font-weight:800;fill:#d65757}.foot{font-size:34px;font-weight:850}</style>
+<text x="720" y="84" text-anchor="middle" class="title">Python 실행이 안 된다면 어디부터 확인할까요?</text>
+<text x="720" y="130" text-anchor="middle" class="sub">오류를 한꺼번에 고치려 하지 말고 한 단계씩 확인합니다</text>
+<g transform="translate(120 200)">
+ <rect x="0" y="0" width="280" height="180" rx="26" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/>
+ <text x="140" y="50" text-anchor="middle" class="q">① 새 터미널 열기</text><text x="140" y="92" text-anchor="middle" class="body">설치 후 기존 터미널은</text><text x="140" y="126" text-anchor="middle" class="body">환경 변경을 모를 수 있습니다</text>
+</g>
+<g transform="translate(580 200)">
+ <rect x="0" y="0" width="280" height="180" rx="26" fill="#f5fcfc" stroke="#0f9f98" stroke-width="3"/>
+ <text x="140" y="46" text-anchor="middle" class="q">② 버전 확인</text><rect x="38" y="72" width="204" height="58" rx="12" fill="#17233f"/><text x="140" y="108" text-anchor="middle" class="cmd">python --version</text><text x="140" y="158" text-anchor="middle" class="body">버전이 나오면 Python은 실행됨</text>
+</g>
+<g transform="translate(1040 200)">
+ <rect x="0" y="0" width="280" height="180" rx="26" fill="#f6f9ff" stroke="#2864dc" stroke-width="3"/>
+ <text x="140" y="46" text-anchor="middle" class="q">③ Windows 대안</text><rect x="48" y="72" width="184" height="58" rx="12" fill="#17233f"/><text x="140" y="108" text-anchor="middle" class="cmd">py --version</text><text x="140" y="158" text-anchor="middle" class="body">python과 py 결과를 비교</text>
+</g>
+<line x1="400" y1="290" x2="580" y2="290" stroke="#2864dc" stroke-width="5"/><polygon points="580,290 556,276 556,304" fill="#2864dc"/>
+<line x1="860" y1="290" x2="1040" y2="290" stroke="#0f9f98" stroke-width="5"/><polygon points="1040,290 1016,276 1016,304" fill="#0f9f98"/>
+<g transform="translate(340 465)">
+ <rect x="0" y="0" width="760" height="155" rx="28" fill="#f7faff" stroke="#a8c1f6" stroke-width="2"/>
+ <text x="380" y="48" text-anchor="middle" class="q">④ VS Code에서는 Python: Select Interpreter 확인</text>
+ <text x="380" y="88" text-anchor="middle" class="body">설치된 Python과 VS Code가 선택한 Python이 다르면 실행 결과가 달라질 수 있습니다.</text>
+ <text x="380" y="126" text-anchor="middle" class="body">상태 표시줄 또는 Command Palette에서 사용할 인터프리터를 선택합니다.</text>
+</g>
+<rect x="170" y="670" width="1100" height="85" rx="24" fill="#effaf8" stroke="#8fd8d2" stroke-width="2"/>
+<text x="720" y="725" text-anchor="middle" class="foot">좋은 디버깅 = 오류 문구 + 실행한 명령 + 현재 환경을 차례대로 확인하기</text>
 </svg>
