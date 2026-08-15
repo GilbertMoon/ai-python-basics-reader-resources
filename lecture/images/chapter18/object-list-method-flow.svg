@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">여러 객체와 리스트 반복 처리 흐름</title>
+<desc id="desc">하나의 클래스로 여러 객체를 만들고 리스트에 저장한 뒤 반복문으로 속성과 메서드를 처리하며 딕셔너리와 클래스를 비교하는 Chapter 18 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:38px;font-weight:800}.s{font-size:25px;font-weight:700;fill:#52617e}.h{font-size:25px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.tag{font-size:19px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">같은 클래스로 여러 객체를 만들고 리스트에서 반복 처리할 수 있습니다</text>
+<text x="70" y="132" class="s">객체마다 값은 다르지만 같은 속성 구조와 메서드를 공유합니다</text>
+<rect x="70" y="190" width="300" height="280" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<rect x="105" y="220" width="130" height="38" rx="19" fill="#2f6ecb"/><text x="170" y="247" text-anchor="middle" class="tag">Product</text>
+<text x="105" y="320" class="code">keyboard</text><text x="230" y="320" class="small">45,000원</text>
+<text x="105" y="365" class="code">mouse</text><text x="230" y="365" class="small">25,000원</text>
+<text x="105" y="410" class="code">webcam</text><text x="230" y="410" class="small">65,000원</text>
+<line x1="370" y1="330" x2="450" y2="330" stroke="#4775d1" stroke-width="5"/><polygon points="450,330 430,317 430,343" fill="#4775d1"/>
+<rect x="450" y="190" width="430" height="280" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<text x="490" y="240" class="h">객체를 리스트에 저장</text>
+<text x="490" y="300" class="code">products = [</text>
+<text x="520" y="340" class="code">keyboard,</text>
+<text x="520" y="375" class="code">mouse,</text>
+<text x="520" y="410" class="code">webcam</text>
+<text x="490" y="445" class="code">]</text>
+<line x1="880" y1="330" x2="960" y2="330" stroke="#2fa66d" stroke-width="5"/><polygon points="960,330 940,317 940,343" fill="#2fa66d"/>
+<rect x="960" y="190" width="410" height="280" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<text x="1000" y="240" class="h">for로 하나씩 처리</text>
+<text x="1000" y="310" class="code">for product in products:</text>
+<text x="1030" y="355" class="code">product.show_info()</text>
+<text x="1030" y="400" class="code">total += product.price</text>
+<text x="1000" y="445" class="small">속성 조회와 메서드 호출을 반복</text>
+<rect x="90" y="535" width="1260" height="175" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="580" class="h">딕셔너리와 클래스는 상황에 따라 선택합니다</text>
+<text x="130" y="630" class="b">딕셔너리</text><text x="270" y="630" class="small">간단한 설정값 · CSV 한 행 · 빠른 임시 구조</text>
+<text x="720" y="630" class="b">클래스 고려</text><text x="900" y="630" class="small">같은 형태의 객체를 많이 생성 · 데이터와 기능이 함께 반복</text>
+<text x="130" y="675" class="small">클래스가 항상 더 좋은 것은 아닙니다. 가장 단순하고 읽기 쉬운 구조를 먼저 선택합니다.</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">클래스 → 여러 객체 → 리스트 → 반복문 → 속성·메서드 처리</text>
+</svg>
