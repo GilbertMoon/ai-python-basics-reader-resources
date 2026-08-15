@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">CSV를 DataFrame으로 읽은 뒤 처음 확인할 순서</title>
+<desc id="desc">pd.read_csv로 CSV를 읽고 head shape columns dtypes info 순서로 데이터 구조를 점검하는 Chapter 21 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:39px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:24px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.n{font-size:18px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">처음 받은 CSV는 계산보다 구조 확인부터 시작합니다</text>
+<text x="70" y="132" class="s">행·열 개수, 열 이름, 자료형, 결측값을 먼저 알면 이후 분석 오류를 줄일 수 있습니다</text>
+<rect x="65" y="195" width="250" height="205" rx="24" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="105" cy="235" r="22" fill="#2f6ecb"/><text x="105" y="242" text-anchor="middle" class="n">1</text><text x="145" y="242" class="h">읽기</text>
+<text x="100" y="315" class="code">pd.read_csv(...)</text>
+<text x="100" y="360" class="small">CSV → DataFrame</text>
+<line x1="315" y1="300" x2="350" y2="300" stroke="#4775d1" stroke-width="5"/><polygon points="350,300 330,287 330,313" fill="#4775d1"/>
+<rect x="350" y="195" width="250" height="205" rx="24" fill="#eaf9f1" stroke="#42b983" stroke-width="3"/>
+<circle cx="390" cy="235" r="22" fill="#2fa66d"/><text x="390" y="242" text-anchor="middle" class="n">2</text><text x="430" y="242" class="h">일부 보기</text>
+<text x="385" y="315" class="code">df.head()</text>
+<text x="385" y="355" class="code">df.tail()</text>
+<line x1="600" y1="300" x2="635" y2="300" stroke="#2fa66d" stroke-width="5"/><polygon points="635,300 615,287 615,313" fill="#2fa66d"/>
+<rect x="635" y="195" width="250" height="205" rx="24" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="675" cy="235" r="22" fill="#d8a432"/><text x="675" y="242" text-anchor="middle" class="n">3</text><text x="715" y="242" class="h">크기·열</text>
+<text x="670" y="315" class="code">df.shape</text>
+<text x="670" y="355" class="code">df.columns</text>
+<line x1="885" y1="300" x2="920" y2="300" stroke="#d8a432" stroke-width="5"/><polygon points="920,300 900,287 900,313" fill="#d8a432"/>
+<rect x="920" y="195" width="250" height="205" rx="24" fill="#f3efff" stroke="#9b82d9" stroke-width="3"/>
+<circle cx="960" cy="235" r="22" fill="#7d64bd"/><text x="960" y="242" text-anchor="middle" class="n">4</text><text x="1000" y="242" class="h">자료형</text>
+<text x="955" y="315" class="code">df.dtypes</text>
+<text x="955" y="355" class="code">df.info()</text>
+<line x1="1170" y1="300" x2="1205" y2="300" stroke="#7d64bd" stroke-width="5"/><polygon points="1205,300 1185,287 1185,313" fill="#7d64bd"/>
+<rect x="1205" y="195" width="170" height="205" rx="24" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="1245" cy="235" r="22" fill="#d85c5c"/><text x="1245" y="242" text-anchor="middle" class="n">5</text><text x="1285" y="242" class="h">결측</text>
+<text x="1235" y="320" class="code">isna()</text>
+<text x="1235" y="360" class="code">.sum()</text>
+<rect x="90" y="490" width="1260" height="195" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="535" class="h">속성과 메서드의 괄호도 구분합니다</text>
+<text x="130" y="590" class="b">속성</text><text x="250" y="590" class="code">df.shape   df.columns   df.dtypes</text>
+<text x="130" y="635" class="b">메서드</text><text x="250" y="635" class="code">df.head()   df.tail()   df.info()</text>
+<text x="760" y="590" class="small">예제 데이터: 10행 × 7열</text>
+<text x="760" y="635" class="small">price·quantity 자료형과 city 결측값을 확인</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">읽기 → 일부 보기 → shape·columns → dtypes·info → 결측값 확인</text>
+</svg>
