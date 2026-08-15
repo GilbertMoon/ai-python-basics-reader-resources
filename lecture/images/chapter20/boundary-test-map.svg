@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">정상값 경계값 비정상값 테스트</title>
+<desc id="desc">무료 배송 기준 50000원을 예로 정상값 경계값 비정상값을 나누고 49999 50000 50001을 비교하는 Chapter 20 인포그래픽</desc>
+<rect width="1440" height="810" fill="#ffffff"/>
+<style>text{font-family:Pretendard,'Noto Sans KR','Malgun Gothic',sans-serif;fill:#12255f}.t{font-size:40px;font-weight:800}.s{font-size:24px;font-weight:700;fill:#52617e}.h{font-size:25px;font-weight:800}.b{font-size:18px;font-weight:600}.code{font-family:Consolas,monospace;font-size:18px;font-weight:700}.small{font-size:15px;font-weight:600}.n{font-size:19px;font-weight:800;fill:#fff}</style>
+<text x="70" y="88" class="t">조건이 바뀌는 경계값은 바로 전·정확한 값·바로 뒤를 테스트합니다</text>
+<text x="70" y="132" class="s">정상값만 확인하면 경계에서만 나타나는 논리 오류를 놓칠 수 있습니다</text>
+<rect x="70" y="190" width="390" height="260" rx="26" fill="#eef5ff" stroke="#77a7f4" stroke-width="3"/>
+<circle cx="115" cy="232" r="23" fill="#2f6ecb"/><text x="115" y="239" text-anchor="middle" class="n">1</text><text x="155" y="240" class="h">정상값</text>
+<text x="105" y="310" class="code">40000 → 3000</text>
+<text x="105" y="355" class="code">60000 → 0</text>
+<text x="105" y="410" class="small">평소 자주 들어올 입력으로 기본 동작 확인</text>
+<rect x="525" y="190" width="390" height="260" rx="26" fill="#fffaf1" stroke="#f0c25d" stroke-width="3"/>
+<circle cx="570" cy="232" r="23" fill="#d8a432"/><text x="570" y="239" text-anchor="middle" class="n">2</text><text x="610" y="240" class="h">경계값</text>
+<text x="560" y="305" class="code">49999 → 3000</text>
+<text x="560" y="350" class="code">50000 → 0</text>
+<text x="560" y="395" class="code">50001 → 0</text>
+<text x="560" y="430" class="small">기준 바로 전 · 기준 · 바로 뒤를 확인</text>
+<rect x="980" y="190" width="390" height="260" rx="26" fill="#fff1f1" stroke="#e27676" stroke-width="3"/>
+<circle cx="1025" cy="232" r="23" fill="#d85c5c"/><text x="1025" y="239" text-anchor="middle" class="n">3</text><text x="1065" y="240" class="h">비정상값</text>
+<text x="1015" y="315" class="code">-1000</text>
+<text x="1015" y="365" class="code">"오만원"</text>
+<text x="1015" y="420" class="small">허용할지, 안내할지 요구사항으로 결정</text>
+<rect x="90" y="510" width="1260" height="195" rx="26" fill="#f7f9fc" stroke="#d8e1f0" stroke-width="2"/>
+<text x="130" y="555" class="h">버그가 있는 코드라면 경계값에서 차이가 드러납니다</text>
+<text x="130" y="610" class="code">if order_amount &gt; 50000:</text><text x="600" y="610" class="small">50000은 조건에 포함되지 않음</text>
+<text x="130" y="655" class="code">calculate_shipping(50000) == 0</text><text x="600" y="655" class="b">→ False</text>
+<text x="840" y="610" class="b">요구사항</text><text x="980" y="610" class="small">50,000원 이상 무료</text>
+<text x="840" y="655" class="b">수정 방향</text><text x="980" y="655" class="code">&gt;= 50000</text>
+<rect x="90" y="745" width="1260" height="40" rx="14" fill="#eef5ff"/>
+<text x="720" y="772" text-anchor="middle" class="b">테스트는 “아무 값 몇 개”가 아니라 요구사항의 기준을 중심으로 설계합니다</text>
+</svg>
